@@ -1,0 +1,48 @@
+[
+  {
+    "account_size": 150000.0,
+    "contracts": 1,
+    "pnl_scale": 0.3333333333,
+    "drawdown_limit": -4500.0,
+    "profit_target": 9000.0,
+    "consistency_limit_pct": 50.0,
+    "direct_eval": {
+      "passed": true,
+      "blown": false,
+      "days_processed": 662,
+      "days_to_pass": 662,
+      "end_pnl": 9205.499999079439,
+      "peak_pnl": 9205.499999079439,
+      "max_drawdown": -2860.299999713973,
+      "best_day": 706.5399999293458,
+      "consistency_pct_at_pass": 7.675194177393956,
+      "consistency_passed": true
+    },
+    "mc_eval_baseline": {
+      "simulations": 5000,
+      "pass_rate": 1.0,
+      "blowup_rate": 0.0,
+      "median_days_to_pass": 100,
+      "consistency_pass_rate": 1.0
+    },
+    "mc_eval_conservative": {
+      "simulations": 5000,
+      "pass_rate": 1.0,
+      "blowup_rate": 0.0,
+      "median_days_to_pass": 142,
+      "consistency_pass_rate": 1.0
+    },
+    "funded_path": {
+      "survived": true,
+      "blown": false,
+      "end_pnl": 188056.15998119456,
+      "peak_pnl": 188056.15998119456,
+      "max_drawdown": -2860.299999713973,
+      "best_day": 1346.9799998653018,
+      "worst_day": -444.31999995556805,
+      "profitable_days": 1232,
+      "losing_days": 868,
+      "days_processed": 2100
+    }
+  }
+]

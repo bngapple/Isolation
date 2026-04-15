@@ -1,0 +1,92 @@
+[
+  {
+    "account_size": 25000.0,
+    "contracts": 1,
+    "drawdown_limit": -1000.0,
+    "profit_target": 1250.0,
+    "consistency_limit_pct": 50.0,
+    "direct_eval": {
+      "passed": true,
+      "blown": false,
+      "days_processed": 514,
+      "days_to_pass": 514,
+      "end_pnl": 1294.5,
+      "peak_pnl": 1294.5,
+      "max_drawdown": -780.0,
+      "best_day": 518.5,
+      "consistency_pct_at_pass": 40.05407493240634,
+      "consistency_passed": true
+    },
+    "mc_eval_baseline": {
+      "simulations": 5000,
+      "pass_rate": 0.3934,
+      "blowup_rate": 0.6066,
+      "median_days_to_pass": 93,
+      "consistency_pass_rate": 0.3934
+    },
+    "mc_eval_conservative": {
+      "simulations": 5000,
+      "pass_rate": 0.418,
+      "blowup_rate": 0.582,
+      "median_days_to_pass": 178,
+      "consistency_pass_rate": 0.418
+    },
+    "funded_path": {
+      "survived": false,
+      "blown": true,
+      "end_pnl": 681.5,
+      "peak_pnl": 1681.5,
+      "max_drawdown": -1000.0,
+      "best_day": 518.5,
+      "worst_day": -240.0,
+      "profitable_days": 263,
+      "losing_days": 277,
+      "days_processed": 545
+    }
+  },
+  {
+    "account_size": 150000.0,
+    "contracts": 6,
+    "drawdown_limit": -4500.0,
+    "profit_target": 9000.0,
+    "consistency_limit_pct": 50.0,
+    "direct_eval": {
+      "passed": false,
+      "blown": true,
+      "days_processed": 237,
+      "days_to_pass": null,
+      "end_pnl": 744.0,
+      "peak_pnl": 5406.0,
+      "max_drawdown": -4662.0,
+      "best_day": 3111.0,
+      "consistency_pct_at_pass": null,
+      "consistency_passed": null
+    },
+    "mc_eval_baseline": {
+      "simulations": 5000,
+      "pass_rate": 0.2248,
+      "blowup_rate": 0.7752,
+      "median_days_to_pass": 89,
+      "consistency_pass_rate": 0.2248
+    },
+    "mc_eval_conservative": {
+      "simulations": 5000,
+      "pass_rate": 0.2276,
+      "blowup_rate": 0.7724,
+      "median_days_to_pass": 171,
+      "consistency_pass_rate": 0.2276
+    },
+    "funded_path": {
+      "survived": false,
+      "blown": true,
+      "end_pnl": 744.0,
+      "peak_pnl": 5406.0,
+      "max_drawdown": -4662.0,
+      "best_day": 3111.0,
+      "worst_day": -831.0,
+      "profitable_days": 108,
+      "losing_days": 126,
+      "days_processed": 237
+    }
+  }
+]

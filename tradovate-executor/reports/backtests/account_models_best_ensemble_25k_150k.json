@@ -1,0 +1,34 @@
+[
+  {
+    "account_size": 25000.0,
+    "contracts": 1,
+    "monthly_loss_limit": -1000.0,
+    "raw_scaled_total_pnl": 3833.0,
+    "trades_taken": 9998,
+    "trades_skipped_after_halt": 33,
+    "monthly_halt_count": 2,
+    "total_pnl": 4344.0,
+    "avg_monthly_pnl": 43.44,
+    "best_month": 1374.5,
+    "worst_month": -1025.0,
+    "best_day": 628.5,
+    "worst_day": -240.0,
+    "max_drawdown": -3100.0
+  },
+  {
+    "account_size": 150000.0,
+    "contracts": 6,
+    "monthly_loss_limit": -4500.0,
+    "raw_scaled_total_pnl": 22998.0,
+    "trades_taken": 9888,
+    "trades_skipped_after_halt": 143,
+    "monthly_halt_count": 6,
+    "total_pnl": 28206.0,
+    "avg_monthly_pnl": 282.06,
+    "best_month": 8247.0,
+    "worst_month": -4623.0,
+    "best_day": 3771.0,
+    "worst_day": -1440.0,
+    "max_drawdown": -16587.0
+  }
+]
