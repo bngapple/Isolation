@@ -140,6 +140,7 @@ class ExecutionConfig:
     """Account-level execution policy for live trading."""
     single_position_mode: bool = True
     same_bar_conflict_policy: str = "strongest_edge"
+    disabled_strategies: list[str] = field(default_factory=list)
     strategy_edge_scores: dict = field(default_factory=lambda: {
         # Based on the reproduced original-parity Hybrid v2 expectancy per trade.
         "IB": 53.76,

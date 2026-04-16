@@ -12,6 +12,9 @@
   "execution": {
     "single_position_mode": true,
     "same_bar_conflict_policy": "strongest_edge",
+    "disabled_strategies": [
+      "RSI"
+    ],
     "strategy_edge_scores": {
       "IB": 53.76,
       "MOM": 36.21,

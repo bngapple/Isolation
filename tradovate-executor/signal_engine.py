@@ -8,10 +8,10 @@ import logging
 from dataclasses import dataclass
 from datetime import datetime, time as dt_time
 from enum import Enum
-from typing import Optional
+from typing import Iterable, Optional
 
 from market_data import MarketState
-from config import RSIParams, IBParams, MOMParams, SessionConfig
+from config import ExecutionConfig, RSIParams, IBParams, MOMParams, SessionConfig
 
 logger = logging.getLogger(__name__)
 
@@ -74,11 +74,17 @@ class SignalEngine:
         ib_params: IBParams,
         mom_params: MOMParams,
         session: SessionConfig,
+        execution_cfg: Optional[ExecutionConfig] = None,
+        disabled_strategies: Optional[Iterable[str]] = None,
     ):
         self.rsi_p = rsi_params
         self.ib_p = ib_params
         self.mom_p = mom_params
         self.session = session
+        disabled = set(disabled_strategies or [])
+        if execution_cfg:
+            disabled.update(execution_cfg.disabled_strategies)
+        self.disabled_strategies = {str(name).upper() for name in disabled}
 
         # Position tracking per strategy
         self.positions = {
@@ -90,6 +96,9 @@ class SignalEngine:
         self._bar_count = 0
         self._ib_traded_today = False
         self._current_date = None
+
+    def _is_disabled(self, strategy: str) -> bool:
+        return strategy.upper() in self.disabled_strategies
 
     def evaluate(self, state: MarketState) -> list[Signal]:
         """
@@ -125,17 +134,17 @@ class SignalEngine:
 
         if allow_new_entries:
             # Strategy 1: RSI Extremes
-            rsi_sig = self._eval_rsi(state)
+            rsi_sig = None if self._is_disabled("RSI") else self._eval_rsi(state)
             if rsi_sig:
                 signals.append(rsi_sig)
 
             # Strategy 2: IB Breakout
-            ib_sig = self._eval_ib(state)
+            ib_sig = None if self._is_disabled("IB") else self._eval_ib(state)
             if ib_sig:
                 signals.append(ib_sig)
 
             # Strategy 3: Momentum Bars
-            mom_sig = self._eval_mom(state)
+            mom_sig = None if self._is_disabled("MOM") else self._eval_mom(state)
             if mom_sig:
                 signals.append(mom_sig)
 

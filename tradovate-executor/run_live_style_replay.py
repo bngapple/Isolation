@@ -173,7 +173,8 @@ def close_trade(trade: OpenTrade, exit_time: datetime, exit_price: float, reason
 
 
 def run_replay(config: AppConfig, minute_df, start_date: str | None = None) -> dict:
-    disabled = set(getattr(config, "_replay_disabled_strategies", set()))
+    disabled = set(config.execution.disabled_strategies)
+    disabled.update(getattr(config, "_replay_disabled_strategies", set()))
     if start_date:
         minute_df = minute_df.filter(minute_df["date_et"] >= datetime.fromisoformat(start_date).date())
 
@@ -182,7 +183,14 @@ def run_replay(config: AppConfig, minute_df, start_date: str | None = None) -> d
 
     loop = asyncio.new_event_loop()
     market_data = MarketDataEngine(on_bar_complete=None)
-    signal_engine = SignalEngine(config.rsi, config.ib, config.mom, config.session)
+    signal_engine = SignalEngine(
+        config.rsi,
+        config.ib,
+        config.mom,
+        config.session,
+        execution_cfg=config.execution,
+        disabled_strategies=disabled,
+    )
 
     pending_signal: Signal | None = None
     active_trade: OpenTrade | None = None

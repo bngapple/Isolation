@@ -86,6 +86,7 @@ class TradovateExecutor:
             ib_params=config.ib,
             mom_params=config.mom,
             session=config.session,
+            execution_cfg=config.execution,
         )
 
         self.market_data = MarketDataEngine(on_bar_complete=self._on_bar_complete)
@@ -114,6 +115,11 @@ class TradovateExecutor:
         logger.info(f"Environment: {self.config.environment.value.upper()}")
         logger.info(f"Symbol: {self.config.symbol}")
         logger.info(f"Accounts: {len(self.config.accounts)} configured")
+        if self.config.execution.disabled_strategies:
+            logger.info(
+                "Disabled strategies: %s",
+                ", ".join(sorted(self.config.execution.disabled_strategies)),
+            )
         logger.info("=" * 60)
 
         # 1. Authenticate, or synthesize a local session for NT-only mode.
