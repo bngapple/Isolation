@@ -64,8 +64,8 @@ def rt_cost(contracts: int) -> float:
     return (COMM_PER_SIDE + EXCH_PER_SIDE) * 2 * contracts + SLIP_TICKS * TICK_SIZE * POINT_VALUE * 2 * contracts
 
 
-def resample_15m_rth(minute_df: pl.DataFrame) -> pl.DataFrame:
-    rth = minute_df.filter((pl.col("hhmm") >= 930) & (pl.col("hhmm") < 1600))
+def resample_15m_session(minute_df: pl.DataFrame, end_hhmm: int = 1600) -> pl.DataFrame:
+    rth = minute_df.filter((pl.col("hhmm") >= 930) & (pl.col("hhmm") < end_hhmm))
     return (
         rth.group_by_dynamic("ts_et", every="15m")
         .agg([
@@ -412,8 +412,8 @@ def run_mc(trades: list[Trade], n_sims: int = 5000, pnl_mult: float = 1.0) -> di
     }
 
 
-def run_hybrid_v2_parity(minute_df: pl.DataFrame) -> dict:
-    df_15m = resample_15m_rth(minute_df)
+def run_hybrid_v2_parity(minute_df: pl.DataFrame, session_end_hhmm: int = 1600, flatten_hhmm: int = FLATTEN_TIME) -> dict:
+    df_15m = resample_15m_session(minute_df, end_hhmm=session_end_hhmm)
     opens = df_15m["open"].to_numpy()
     highs = df_15m["high"].to_numpy()
     lows = df_15m["low"].to_numpy()
@@ -425,15 +425,15 @@ def run_hybrid_v2_parity(minute_df: pl.DataFrame) -> dict:
 
     rsi = HYBRID_V2["RSI"]
     rsi_sigs = sig_rsi_extreme(df_15m, rsi["period"], rsi["ob"], rsi["os"])
-    trades_by_strategy["RSI"] = backtest(opens, highs, lows, closes, timestamps, hhmm, rsi_sigs, int(rsi["sl_pts"] / TICK_SIZE), int(rsi["tp_pts"] / TICK_SIZE), rsi["hold"], CONTRACTS_PER_STRATEGY, "RSI", FLATTEN_TIME)
+    trades_by_strategy["RSI"] = backtest(opens, highs, lows, closes, timestamps, hhmm, rsi_sigs, int(rsi["sl_pts"] / TICK_SIZE), int(rsi["tp_pts"] / TICK_SIZE), rsi["hold"], CONTRACTS_PER_STRATEGY, "RSI", flatten_hhmm)
 
     ib = HYBRID_V2["IB"]
     ib_sigs = sig_ib_breakout(df_15m, ib["ib_filter"])
-    trades_by_strategy["IB"] = backtest(opens, highs, lows, closes, timestamps, hhmm, ib_sigs, int(ib["sl_pts"] / TICK_SIZE), int(ib["tp_pts"] / TICK_SIZE), ib["hold"], CONTRACTS_PER_STRATEGY, "IB", FLATTEN_TIME)
+    trades_by_strategy["IB"] = backtest(opens, highs, lows, closes, timestamps, hhmm, ib_sigs, int(ib["sl_pts"] / TICK_SIZE), int(ib["tp_pts"] / TICK_SIZE), ib["hold"], CONTRACTS_PER_STRATEGY, "IB", flatten_hhmm)
 
     mom = HYBRID_V2["MOM"]
     mom_sigs = sig_momentum_bar(df_15m, mom["atr_mult"], mom["vol_mult"])
-    trades_by_strategy["MOM"] = backtest(opens, highs, lows, closes, timestamps, hhmm, mom_sigs, int(mom["sl_pts"] / TICK_SIZE), int(mom["tp_pts"] / TICK_SIZE), mom["hold"], CONTRACTS_PER_STRATEGY, "MOM", FLATTEN_TIME)
+    trades_by_strategy["MOM"] = backtest(opens, highs, lows, closes, timestamps, hhmm, mom_sigs, int(mom["sl_pts"] / TICK_SIZE), int(mom["tp_pts"] / TICK_SIZE), mom["hold"], CONTRACTS_PER_STRATEGY, "MOM", flatten_hhmm)
 
     all_trades: list[Trade] = []
     for strategy_trades in trades_by_strategy.values():
@@ -445,11 +445,11 @@ def run_hybrid_v2_parity(minute_df: pl.DataFrame) -> dict:
             "name": "Hybrid v2 parity",
             "contracts_per_strategy": CONTRACTS_PER_STRATEGY,
             "max_total_contracts": CONTRACTS_PER_STRATEGY * 3,
-            "flatten_time": FLATTEN_TIME,
+            "flatten_time": flatten_hhmm,
             "daily_limit": DAILY_LIMIT,
             "monthly_loss_limit": MLL,
             "eval_target": EVAL_TARGET,
-            "rth_session": "09:30-16:00 ET",
+            "session_end_hhmm": session_end_hhmm,
             "assumption": "independent overlapping strategy positions",
             "params": HYBRID_V2,
         },
@@ -471,6 +471,8 @@ def run_hybrid_v2_parity(minute_df: pl.DataFrame) -> dict:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run original Hybrid v2 parity backtest")
     parser.add_argument("--data", action="append", default=[], help="Parquet file, directory, or glob. Can repeat.")
+    parser.add_argument("--session-end", type=int, default=1600, help="Last included minute in ET session filter, e.g. 1600 or 1645")
+    parser.add_argument("--flatten-time", type=int, default=FLATTEN_TIME, help="Flatten HHMM in ET")
     parser.add_argument("--output", default="reports/backtests/hybrid_v2_parity.json")
     return parser.parse_args()
 
@@ -480,7 +482,7 @@ def main() -> int:
     data_inputs = args.data or [str(Path("data/processed/MNQ/1m"))]
     parquet_files = discover_parquet_files(data_inputs)
     minute_df = load_parquet_files(parquet_files)
-    result = run_hybrid_v2_parity(minute_df)
+    result = run_hybrid_v2_parity(minute_df, session_end_hhmm=args.session_end, flatten_hhmm=args.flatten_time)
     result["data_sources"] = parquet_files
 
     output_path = Path(args.output)

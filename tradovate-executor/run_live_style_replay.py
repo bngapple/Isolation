@@ -12,7 +12,7 @@ from datetime import datetime
 from pathlib import Path
 
 from backtest_data import discover_parquet_files, load_parquet_files
-from config import AppConfig, POINT_VALUE
+from config import AppConfig, POINT_VALUE, lucid_defaults
 from execution_policy import select_account_entry
 from market_data import MarketDataEngine
 from model_lucid import evaluate_funded_path, evaluate_lucid_path, run_monte_carlo_eval
@@ -291,9 +291,20 @@ def run_replay(config: AppConfig, minute_df, start_date: str | None = None) -> d
         peak = max(peak, cum)
         max_dd = min(max_dd, cum - peak)
 
-    lucid_direct = evaluate_lucid_path([daily[k] for k in sorted(daily)], -4500.0, 9000.0, 50.0)
-    lucid_mc = run_monte_carlo_eval([daily[k] for k in sorted(daily)], -4500.0, 9000.0, 50.0, 5000, 1.0)
-    lucid_funded = evaluate_funded_path([daily[k] for k in sorted(daily)], -4500.0)
+    daily_values = [daily[k] for k in sorted(daily)]
+
+    def _lucid_model(account_size: float) -> dict:
+        defaults = lucid_defaults(account_size)
+        drawdown = float(defaults["max_drawdown"])
+        target = float(defaults["profit_target"])
+        return {
+            "account_size": account_size,
+            "drawdown_limit": drawdown,
+            "profit_target": target,
+            "direct": asdict(evaluate_lucid_path(daily_values, drawdown, target, 50.0)),
+            "mc": asdict(run_monte_carlo_eval(daily_values, drawdown, target, 50.0, 5000, 1.0)),
+            "funded": asdict(evaluate_funded_path(daily_values, drawdown)),
+        }
 
     return {
         "config": {
@@ -318,10 +329,9 @@ def run_replay(config: AppConfig, minute_df, start_date: str | None = None) -> d
             "strategy_counts": dict(strat_counts),
             "strategy_pnl": dict(strat_pnl),
         },
-        "lucid_150k": {
-            "direct": asdict(lucid_direct),
-            "mc": asdict(lucid_mc),
-            "funded": asdict(lucid_funded),
+        "lucid": {
+            "25k": _lucid_model(25_000.0),
+            "150k": _lucid_model(150_000.0),
         },
         "trades": [asdict(t) for t in closed_trades],
     }
@@ -362,9 +372,9 @@ def main() -> int:
     print(f"Total P&L: ${summary['total_pnl']:,.2f}")
     print(f"Monthly avg: ${summary['monthly_avg']:,.2f}")
     print(f"Max DD: ${summary['max_drawdown']:,.2f}")
-    print(f"Lucid direct pass: {result['lucid_150k']['direct']['passed']}")
-    print(f"Lucid direct blown: {result['lucid_150k']['direct']['blown']}")
-    print(f"Lucid MC pass: {result['lucid_150k']['mc']['pass_rate']:.2%}")
+    print(f"Lucid 25k direct pass: {result['lucid']['25k']['direct']['passed']}")
+    print(f"Lucid 150k direct pass: {result['lucid']['150k']['direct']['passed']}")
+    print(f"Lucid 150k MC pass: {result['lucid']['150k']['mc']['pass_rate']:.2%}")
     return 0
 
 
