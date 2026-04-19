@@ -1,0 +1,544 @@
+{
+  "window_start": "2020-01-01",
+  "data_sources": [
+    "data/processed/MNQ/1m/mnq_8yr_databento.parquet",
+    "data/processed/MNQ/1m/nq_2017_databento.parquet",
+    "data/processed/MNQ/1m/nq_mnq_stitched_2017_now.parquet",
+    "data/processed/MNQ/1m/nq_mnq_stitched_8yr_databento.parquet",
+    "data/processed/MNQ/1m/nq_pre_mnq_databento.parquet"
+  ],
+  "results": {
+    "baseline": {
+      "summary": {
+        "trades": 11673,
+        "total_pnl": 112875.55999999998,
+        "monthly_avg": 1485.2047368421051,
+        "max_drawdown": -2237.820000000002,
+        "worst_month": -890.6599999999983,
+        "best_month": 5195.960000000009
+      },
+      "lucid_25k_1mnq": {
+        "direct": {
+          "passed": true,
+          "blown": false,
+          "days_processed": 46,
+          "days_to_pass": 46,
+          "end_pnl": 1394.1599999999999,
+          "peak_pnl": 1394.1599999999999,
+          "max_drawdown": -326.71999999999997,
+          "best_day": 681.7600000000001,
+          "consistency_pct_at_pass": 48.90113042979286,
+          "consistency_passed": true
+        },
+        "mc": {
+          "simulations": 5000,
+          "pass_rate": 0.9562,
+          "blowup_rate": 0.0438,
+          "median_days_to_pass": 16,
+          "consistency_pass_rate": 0.9562
+        },
+        "funded": {
+          "survived": false,
+          "blown": true,
+          "end_pnl": 4709.699999999998,
+          "peak_pnl": 5793.5199999999995,
+          "max_drawdown": -1083.8200000000015,
+          "best_day": 706.5400000000001,
+          "worst_day": -297.36,
+          "profitable_days": 53,
+          "losing_days": 51,
+          "days_processed": 104
+        }
+      },
+      "lucid_150k_2mnq": {
+        "direct": {
+          "passed": true,
+          "blown": false,
+          "days_processed": 56,
+          "days_to_pass": 56,
+          "end_pnl": 9482.64,
+          "peak_pnl": 9482.64,
+          "max_drawdown": -653.4399999999999,
+          "best_day": 1413.0800000000002,
+          "consistency_pct_at_pass": 14.901757316527888,
+          "consistency_passed": true
+        },
+        "mc": {
+          "simulations": 5000,
+          "pass_rate": 0.9988,
+          "blowup_rate": 0.0012,
+          "median_days_to_pass": 62,
+          "consistency_pass_rate": 0.9988
+        },
+        "funded": {
+          "survived": true,
+          "blown": false,
+          "end_pnl": 225751.11999999968,
+          "peak_pnl": 226345.5199999997,
+          "max_drawdown": -4475.640000000004,
+          "best_day": 1902.64,
+          "worst_day": -644.28,
+          "profitable_days": 928,
+          "losing_days": 665,
+          "days_processed": 1593
+        }
+      }
+    },
+    "vwap_side": {
+      "summary": {
+        "trades": 11094,
+        "total_pnl": 103159.68,
+        "monthly_avg": 1357.3642105263157,
+        "max_drawdown": -2386.720000000001,
+        "worst_month": -839.5399999999968,
+        "best_month": 4783.760000000001
+      },
+      "lucid_25k_1mnq": {
+        "direct": {
+          "passed": true,
+          "blown": false,
+          "days_processed": 44,
+          "days_to_pass": 44,
+          "end_pnl": 1679.7199999999998,
+          "peak_pnl": 1679.7199999999998,
+          "max_drawdown": -359.1,
+          "best_day": 681.7600000000001,
+          "consistency_pct_at_pass": 40.587717000452464,
+          "consistency_passed": true
+        },
+        "mc": {
+          "simulations": 5000,
+          "pass_rate": 0.9502,
+          "blowup_rate": 0.0498,
+          "median_days_to_pass": 18,
+          "consistency_pass_rate": 0.9502
+        },
+        "funded": {
+          "survived": false,
+          "blown": true,
+          "end_pnl": 4805.859999999997,
+          "peak_pnl": 5808.859999999998,
+          "max_drawdown": -1003.0000000000009,
+          "best_day": 706.5400000000001,
+          "worst_day": -297.36,
+          "profitable_days": 48,
+          "losing_days": 49,
+          "days_processed": 97
+        }
+      },
+      "lucid_150k_2mnq": {
+        "direct": {
+          "passed": true,
+          "blown": false,
+          "days_processed": 56,
+          "days_to_pass": 56,
+          "end_pnl": 9266.839999999998,
+          "peak_pnl": 9266.839999999998,
+          "max_drawdown": -718.2,
+          "best_day": 1413.0800000000002,
+          "consistency_pct_at_pass": 15.24877951923202,
+          "consistency_passed": true
+        },
+        "mc": {
+          "simulations": 5000,
+          "pass_rate": 0.9994,
+          "blowup_rate": 0.0006,
+          "median_days_to_pass": 68,
+          "consistency_pass_rate": 0.9994
+        },
+        "funded": {
+          "survived": false,
+          "blown": true,
+          "end_pnl": 7098.079999999994,
+          "peak_pnl": 11617.719999999996,
+          "max_drawdown": -4519.640000000002,
+          "best_day": 1413.0800000000002,
+          "worst_day": -594.72,
+          "profitable_days": 51,
+          "losing_days": 63,
+          "days_processed": 114
+        }
+      }
+    },
+    "atr_high": {
+      "summary": {
+        "trades": 5908,
+        "total_pnl": 76441.76,
+        "monthly_avg": 1005.8126315789473,
+        "max_drawdown": -1165.6800000000057,
+        "worst_month": -653.3799999999991,
+        "best_month": 3406.819999999999
+      },
+      "lucid_25k_1mnq": {
+        "direct": {
+          "passed": true,
+          "blown": false,
+          "days_processed": 44,
+          "days_to_pass": 44,
+          "end_pnl": 1686.4,
+          "peak_pnl": 1686.4,
+          "max_drawdown": -524.9600000000002,
+          "best_day": 560.88,
+          "consistency_pct_at_pass": 33.25901328273245,
+          "consistency_passed": true
+        },
+        "mc": {
+          "simulations": 5000,
+          "pass_rate": 0.9856,
+          "blowup_rate": 0.0144,
+          "median_days_to_pass": 21,
+          "consistency_pass_rate": 0.9856
+        },
+        "funded": {
+          "survived": false,
+          "blown": true,
+          "end_pnl": 2742.7999999999975,
+          "peak_pnl": 3764.5599999999986,
+          "max_drawdown": -1021.7600000000011,
+          "best_day": 560.88,
+          "worst_day": -198.24,
+          "profitable_days": 37,
+          "losing_days": 56,
+          "days_processed": 93
+        }
+      },
+      "lucid_150k_2mnq": {
+        "direct": {
+          "passed": true,
+          "blown": false,
+          "days_processed": 126,
+          "days_to_pass": 126,
+          "end_pnl": 9280.599999999995,
+          "peak_pnl": 9280.599999999995,
+          "max_drawdown": -2256.1600000000026,
+          "best_day": 1121.76,
+          "consistency_pct_at_pass": 12.087149537745411,
+          "consistency_passed": true
+        },
+        "mc": {
+          "simulations": 5000,
+          "pass_rate": 0.9998,
+          "blowup_rate": 0.0002,
+          "median_days_to_pass": 76,
+          "consistency_pass_rate": 0.9998
+        },
+        "funded": {
+          "survived": true,
+          "blown": false,
+          "end_pnl": 152883.52000000104,
+          "peak_pnl": 153081.76000000103,
+          "max_drawdown": -2331.3600000000115,
+          "best_day": 1902.64,
+          "worst_day": -545.1600000000001,
+          "profitable_days": 696,
+          "losing_days": 612,
+          "days_processed": 1308
+        }
+      }
+    },
+    "vwap_side_atr_high": {
+      "summary": {
+        "trades": 5561,
+        "total_pnl": 72232.92,
+        "monthly_avg": 950.4331578947368,
+        "max_drawdown": -1636.1000000000058,
+        "worst_month": -549.1399999999988,
+        "best_month": 3292.6199999999985
+      },
+      "lucid_25k_1mnq": {
+        "direct": {
+          "passed": true,
+          "blown": false,
+          "days_processed": 43,
+          "days_to_pass": 43,
+          "end_pnl": 1331.8200000000002,
+          "peak_pnl": 1331.8200000000002,
+          "max_drawdown": -507.41999999999996,
+          "best_day": 560.88,
+          "consistency_pct_at_pass": 42.11379916204892,
+          "consistency_passed": true
+        },
+        "mc": {
+          "simulations": 5000,
+          "pass_rate": 0.9872,
+          "blowup_rate": 0.0128,
+          "median_days_to_pass": 22,
+          "consistency_pass_rate": 0.9872
+        },
+        "funded": {
+          "survived": false,
+          "blown": true,
+          "end_pnl": 2362.819999999998,
+          "peak_pnl": 3382.719999999999,
+          "max_drawdown": -1019.900000000001,
+          "best_day": 560.88,
+          "worst_day": -198.24,
+          "profitable_days": 37,
+          "losing_days": 61,
+          "days_processed": 98
+        }
+      },
+      "lucid_150k_2mnq": {
+        "direct": {
+          "passed": true,
+          "blown": false,
+          "days_processed": 133,
+          "days_to_pass": 133,
+          "end_pnl": 9561.599999999997,
+          "peak_pnl": 9561.599999999997,
+          "max_drawdown": -2039.800000000002,
+          "best_day": 1121.76,
+          "consistency_pct_at_pass": 11.731927710843378,
+          "consistency_passed": true
+        },
+        "mc": {
+          "simulations": 5000,
+          "pass_rate": 1.0,
+          "blowup_rate": 0.0,
+          "median_days_to_pass": 80,
+          "consistency_pass_rate": 1.0
+        },
+        "funded": {
+          "survived": true,
+          "blown": false,
+          "end_pnl": 144465.84000000075,
+          "peak_pnl": 144664.08000000074,
+          "max_drawdown": -3272.2000000000116,
+          "best_day": 1952.2,
+          "worst_day": -545.1600000000001,
+          "profitable_days": 694,
+          "losing_days": 603,
+          "days_processed": 1297
+        }
+      }
+    },
+    "vwap_atr_025": {
+      "summary": {
+        "trades": 10590,
+        "total_pnl": 94261.79999999999,
+        "monthly_avg": 1240.286842105263,
+        "max_drawdown": -2170.9399999999987,
+        "worst_month": -713.9799999999987,
+        "best_month": 4767.720000000004
+      },
+      "lucid_25k_1mnq": {
+        "direct": {
+          "passed": true,
+          "blown": false,
+          "days_processed": 44,
+          "days_to_pass": 44,
+          "end_pnl": 1374.08,
+          "peak_pnl": 1374.08,
+          "max_drawdown": -315.5400000000001,
+          "best_day": 681.7600000000001,
+          "consistency_pct_at_pass": 49.61574289706569,
+          "consistency_passed": true
+        },
+        "mc": {
+          "simulations": 5000,
+          "pass_rate": 0.9472,
+          "blowup_rate": 0.0528,
+          "median_days_to_pass": 19,
+          "consistency_pass_rate": 0.9472
+        },
+        "funded": {
+          "survived": false,
+          "blown": true,
+          "end_pnl": 4392.2,
+          "peak_pnl": 5416.94,
+          "max_drawdown": -1024.7399999999998,
+          "best_day": 681.7600000000001,
+          "worst_day": -272.58000000000004,
+          "profitable_days": 48,
+          "losing_days": 49,
+          "days_processed": 97
+        }
+      },
+      "lucid_150k_2mnq": {
+        "direct": {
+          "passed": true,
+          "blown": false,
+          "days_processed": 57,
+          "days_to_pass": 57,
+          "end_pnl": 9436.44,
+          "peak_pnl": 9436.44,
+          "max_drawdown": -631.0800000000002,
+          "best_day": 1363.5200000000002,
+          "consistency_pct_at_pass": 14.449516978860673,
+          "consistency_passed": true
+        },
+        "mc": {
+          "simulations": 5000,
+          "pass_rate": 0.999,
+          "blowup_rate": 0.001,
+          "median_days_to_pass": 73,
+          "consistency_pass_rate": 0.999
+        },
+        "funded": {
+          "survived": true,
+          "blown": false,
+          "end_pnl": 188523.60000000027,
+          "peak_pnl": 189018.88000000027,
+          "max_drawdown": -4341.879999999997,
+          "best_day": 1952.2,
+          "worst_day": -644.28,
+          "profitable_days": 910,
+          "losing_days": 677,
+          "days_processed": 1587
+        }
+      }
+    },
+    "vwap_atr_025_atr_high": {
+      "summary": {
+        "trades": 5246,
+        "total_pnl": 66106.12,
+        "monthly_avg": 869.8173684210526,
+        "max_drawdown": -1179.0000000000055,
+        "worst_month": -524.3599999999989,
+        "best_month": 3119.519999999994
+      },
+      "lucid_25k_1mnq": {
+        "direct": {
+          "passed": true,
+          "blown": false,
+          "days_processed": 43,
+          "days_to_pass": 43,
+          "end_pnl": 1576.1799999999998,
+          "peak_pnl": 1576.1799999999998,
+          "max_drawdown": -457.86,
+          "best_day": 436.98000000000013,
+          "consistency_pct_at_pass": 27.72399091474325,
+          "consistency_passed": true
+        },
+        "mc": {
+          "simulations": 5000,
+          "pass_rate": 0.9868,
+          "blowup_rate": 0.0132,
+          "median_days_to_pass": 24,
+          "consistency_pass_rate": 0.9868
+        },
+        "funded": {
+          "survived": false,
+          "blown": true,
+          "end_pnl": 10303.279999999988,
+          "peak_pnl": 11345.999999999995,
+          "max_drawdown": -1042.7200000000066,
+          "best_day": 563.5400000000001,
+          "worst_day": -223.02,
+          "profitable_days": 165,
+          "losing_days": 213,
+          "days_processed": 378
+        }
+      },
+      "lucid_150k_2mnq": {
+        "direct": {
+          "passed": true,
+          "blown": false,
+          "days_processed": 136,
+          "days_to_pass": 136,
+          "end_pnl": 9654.719999999996,
+          "peak_pnl": 9654.719999999996,
+          "max_drawdown": -1718.7600000000002,
+          "best_day": 1127.0800000000002,
+          "consistency_pct_at_pass": 11.673875575884134,
+          "consistency_passed": true
+        },
+        "mc": {
+          "simulations": 5000,
+          "pass_rate": 1.0,
+          "blowup_rate": 0.0,
+          "median_days_to_pass": 85,
+          "consistency_pass_rate": 1.0
+        },
+        "funded": {
+          "survived": true,
+          "blown": false,
+          "end_pnl": 132212.24000000043,
+          "peak_pnl": 132410.48000000042,
+          "max_drawdown": -2358.000000000011,
+          "best_day": 1952.2,
+          "worst_day": -545.1600000000001,
+          "profitable_days": 669,
+          "losing_days": 610,
+          "days_processed": 1279
+        }
+      }
+    },
+    "vwap_atr_050": {
+      "summary": {
+        "trades": 9880,
+        "total_pnl": 82634.09999999999,
+        "monthly_avg": 1087.290789473684,
+        "max_drawdown": -2823.159999999998,
+        "worst_month": -1132.1399999999985,
+        "best_month": 4859.080000000007
+      },
+      "lucid_25k_1mnq": {
+        "direct": {
+          "passed": true,
+          "blown": false,
+          "days_processed": 44,
+          "days_to_pass": 44,
+          "end_pnl": 1514.4,
+          "peak_pnl": 1514.4,
+          "max_drawdown": -255.76000000000005,
+          "best_day": 681.7600000000001,
+          "consistency_pct_at_pass": 45.018489170628634,
+          "consistency_passed": true
+        },
+        "mc": {
+          "simulations": 5000,
+          "pass_rate": 0.9356,
+          "blowup_rate": 0.0644,
+          "median_days_to_pass": 21,
+          "consistency_pass_rate": 0.9356
+        },
+        "funded": {
+          "survived": false,
+          "blown": true,
+          "end_pnl": 4971.760000000001,
+          "peak_pnl": 5974.6,
+          "max_drawdown": -1002.8399999999992,
+          "best_day": 681.7600000000001,
+          "worst_day": -272.58000000000004,
+          "profitable_days": 50,
+          "losing_days": 45,
+          "days_processed": 95
+        }
+      },
+      "lucid_150k_2mnq": {
+        "direct": {
+          "passed": true,
+          "blown": false,
+          "days_processed": 55,
+          "days_to_pass": 55,
+          "end_pnl": 9091.6,
+          "peak_pnl": 9091.6,
+          "max_drawdown": -511.5200000000001,
+          "best_day": 1363.5200000000002,
+          "consistency_pct_at_pass": 14.997580183906026,
+          "consistency_passed": true
+        },
+        "mc": {
+          "simulations": 5000,
+          "pass_rate": 0.9976,
+          "blowup_rate": 0.0024,
+          "median_days_to_pass": 83,
+          "consistency_pass_rate": 0.9976
+        },
+        "funded": {
+          "survived": false,
+          "blown": true,
+          "end_pnl": 7392.600000000006,
+          "peak_pnl": 11949.2,
+          "max_drawdown": -4556.599999999995,
+          "best_day": 1363.5200000000002,
+          "worst_day": -545.1600000000001,
+          "profitable_days": 53,
+          "losing_days": 59,
+          "days_processed": 112
+        }
+      }
+    }
+  }
+}
