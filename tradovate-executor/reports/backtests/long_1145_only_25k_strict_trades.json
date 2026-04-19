@@ -1,0 +1,4944 @@
+{
+  "candidate": "long_1145_only",
+  "account": "25k",
+  "contracts": 6,
+  "summary": {
+    "candidate": "long_1145_only",
+    "account": "25k",
+    "contracts": 6,
+    "total_pnl": 7294.44,
+    "monthly_avg": 95.98,
+    "max_drawdown": -6739.08,
+    "worst_day": -148.68,
+    "trade_count": 492,
+    "killswitch_triggers": 0,
+    "win_rate": 12.4,
+    "profit_factor": 1.1732,
+    "oos_pnl_2024plus": 3758.64,
+    "train_pnl_2020_2023": 3535.8,
+    "slippage_plus1tick_side": 4342.44,
+    "slippage_plus2ticks_side": 1390.44
+  },
+  "trades": [
+    {
+      "entry_time": "2020-01-02 11:45:00-05:00",
+      "exit_time": "2020-01-02 13:00:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 8819.75,
+      "exit_px": 8841.75,
+      "reason": "max_hold",
+      "net_pnl": 241.32
+    },
+    {
+      "entry_time": "2020-01-10 11:45:00-05:00",
+      "exit_time": "2020-01-10 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 9018.5,
+      "exit_px": 9018.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2020-01-24 11:45:00-05:00",
+      "exit_time": "2020-01-24 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 9215.5,
+      "exit_px": 9215.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2020-01-31 11:45:00-05:00",
+      "exit_time": "2020-01-31 11:54:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 9050.25,
+      "exit_px": 9049.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2020-02-05 11:45:00-05:00",
+      "exit_time": "2020-02-05 13:00:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 9337.0,
+      "exit_px": 9349.5,
+      "reason": "max_hold",
+      "net_pnl": 127.32
+    },
+    {
+      "entry_time": "2020-02-11 11:45:00-05:00",
+      "exit_time": "2020-02-11 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 9572.0,
+      "exit_px": 9571.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2020-02-18 11:45:00-05:00",
+      "exit_time": "2020-02-18 12:00:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 9579.5,
+      "exit_px": 9579.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2020-02-20 11:45:00-05:00",
+      "exit_time": "2020-02-20 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 9581.75,
+      "exit_px": 9571.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-02-24 11:45:00-05:00",
+      "exit_time": "2020-02-24 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 9106.25,
+      "exit_px": 9095.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-02-25 11:45:00-05:00",
+      "exit_time": "2020-02-25 12:45:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 8979.0,
+      "exit_px": 8978.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2020-02-27 11:45:00-05:00",
+      "exit_time": "2020-02-27 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 8635.0,
+      "exit_px": 8624.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-03-06 11:45:00-05:00",
+      "exit_time": "2020-03-06 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 8443.25,
+      "exit_px": 8432.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-03-10 11:45:00-04:00",
+      "exit_time": "2020-03-10 11:50:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 8021.0,
+      "exit_px": 8010.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-03-11 11:45:00-04:00",
+      "exit_time": "2020-03-11 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 8087.25,
+      "exit_px": 8076.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-03-12 11:45:00-04:00",
+      "exit_time": "2020-03-12 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 7426.5,
+      "exit_px": 7416.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-03-13 11:45:00-04:00",
+      "exit_time": "2020-03-13 11:47:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 7326.5,
+      "exit_px": 7316.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-03-18 11:45:00-04:00",
+      "exit_time": "2020-03-18 11:55:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 7105.5,
+      "exit_px": 7205.0,
+      "reason": "take_profit",
+      "net_pnl": 1171.32
+    },
+    {
+      "entry_time": "2020-03-23 11:45:00-04:00",
+      "exit_time": "2020-03-23 12:01:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 6768.75,
+      "exit_px": 6868.25,
+      "reason": "take_profit",
+      "net_pnl": 1171.32
+    },
+    {
+      "entry_time": "2020-03-27 11:45:00-04:00",
+      "exit_time": "2020-03-27 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 7629.5,
+      "exit_px": 7619.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-04-01 11:45:00-04:00",
+      "exit_time": "2020-04-01 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 7601.5,
+      "exit_px": 7591.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-04-03 11:45:00-04:00",
+      "exit_time": "2020-04-03 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 7520.5,
+      "exit_px": 7510.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-04-15 11:45:00-04:00",
+      "exit_time": "2020-04-15 11:48:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 8532.25,
+      "exit_px": 8521.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-04-21 11:45:00-04:00",
+      "exit_time": "2020-04-21 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 8349.75,
+      "exit_px": 8401.75,
+      "reason": "max_hold",
+      "net_pnl": 601.32
+    },
+    {
+      "entry_time": "2020-04-28 11:45:00-04:00",
+      "exit_time": "2020-04-28 11:50:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 8738.25,
+      "exit_px": 8727.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-05-01 11:45:00-04:00",
+      "exit_time": "2020-05-01 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 8768.75,
+      "exit_px": 8758.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-05-13 11:45:00-04:00",
+      "exit_time": "2020-05-13 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 9032.5,
+      "exit_px": 9022.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-05-15 11:45:00-04:00",
+      "exit_time": "2020-05-15 11:47:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 8980.5,
+      "exit_px": 8970.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-05-26 11:45:00-04:00",
+      "exit_time": "2020-05-26 11:47:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 9427.0,
+      "exit_px": 9416.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-05-27 11:45:00-04:00",
+      "exit_time": "2020-05-27 12:53:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 9231.5,
+      "exit_px": 9331.0,
+      "reason": "take_profit",
+      "net_pnl": 1171.32
+    },
+    {
+      "entry_time": "2020-06-03 11:45:00-04:00",
+      "exit_time": "2020-06-03 12:01:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 9669.0,
+      "exit_px": 9668.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2020-06-04 11:45:00-04:00",
+      "exit_time": "2020-06-04 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 9661.75,
+      "exit_px": 9661.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2020-06-11 11:45:00-04:00",
+      "exit_time": "2020-06-11 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 9878.75,
+      "exit_px": 9868.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-06-18 11:45:00-04:00",
+      "exit_time": "2020-06-18 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 9987.25,
+      "exit_px": 9986.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2020-06-24 11:45:00-04:00",
+      "exit_time": "2020-06-24 11:49:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 9944.25,
+      "exit_px": 9933.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-07-09 11:45:00-04:00",
+      "exit_time": "2020-07-09 11:52:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 10598.0,
+      "exit_px": 10597.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2020-07-15 11:45:00-04:00",
+      "exit_time": "2020-07-15 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 10623.0,
+      "exit_px": 10612.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-07-16 11:45:00-04:00",
+      "exit_time": "2020-07-16 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 10505.0,
+      "exit_px": 10555.75,
+      "reason": "max_hold",
+      "net_pnl": 586.32
+    },
+    {
+      "entry_time": "2020-07-21 11:45:00-04:00",
+      "exit_time": "2020-07-21 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 10870.25,
+      "exit_px": 10859.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-07-27 11:45:00-04:00",
+      "exit_time": "2020-07-27 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 10541.0,
+      "exit_px": 10594.75,
+      "reason": "max_hold",
+      "net_pnl": 622.32
+    },
+    {
+      "entry_time": "2020-08-04 11:45:00-04:00",
+      "exit_time": "2020-08-04 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11037.0,
+      "exit_px": 11036.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2020-08-07 11:45:00-04:00",
+      "exit_time": "2020-08-07 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11217.25,
+      "exit_px": 11216.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2020-08-10 11:45:00-04:00",
+      "exit_time": "2020-08-10 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 10997.75,
+      "exit_px": 11078.75,
+      "reason": "max_hold",
+      "net_pnl": 949.32
+    },
+    {
+      "entry_time": "2020-09-02 11:45:00-04:00",
+      "exit_time": "2020-09-02 12:20:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12218.0,
+      "exit_px": 12317.5,
+      "reason": "take_profit",
+      "net_pnl": 1171.32
+    },
+    {
+      "entry_time": "2020-09-03 11:45:00-04:00",
+      "exit_time": "2020-09-03 11:55:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11903.0,
+      "exit_px": 11902.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2020-09-08 11:45:00-04:00",
+      "exit_time": "2020-09-08 11:47:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11221.25,
+      "exit_px": 11210.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-09-11 11:45:00-04:00",
+      "exit_time": "2020-09-11 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11154.5,
+      "exit_px": 11154.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2020-09-17 11:45:00-04:00",
+      "exit_time": "2020-09-17 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11061.25,
+      "exit_px": 11050.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-09-23 11:45:00-04:00",
+      "exit_time": "2020-09-23 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11036.75,
+      "exit_px": 11026.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-10-02 11:45:00-04:00",
+      "exit_time": "2020-10-02 11:52:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11322.75,
+      "exit_px": 11322.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2020-10-06 11:45:00-04:00",
+      "exit_time": "2020-10-06 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11414.75,
+      "exit_px": 11404.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-10-14 11:45:00-04:00",
+      "exit_time": "2020-10-14 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12044.5,
+      "exit_px": 12034.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-10-16 11:45:00-04:00",
+      "exit_time": "2020-10-16 12:06:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11910.5,
+      "exit_px": 11910.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2020-10-20 11:45:00-04:00",
+      "exit_time": "2020-10-20 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11649.5,
+      "exit_px": 11713.75,
+      "reason": "max_hold",
+      "net_pnl": 748.32
+    },
+    {
+      "entry_time": "2020-10-23 11:45:00-04:00",
+      "exit_time": "2020-10-23 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11579.75,
+      "exit_px": 11569.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-10-26 11:45:00-04:00",
+      "exit_time": "2020-10-26 11:59:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11470.75,
+      "exit_px": 11470.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2020-10-28 11:45:00-04:00",
+      "exit_time": "2020-10-28 11:50:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11233.75,
+      "exit_px": 11223.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-10-30 11:45:00-04:00",
+      "exit_time": "2020-10-30 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11009.0,
+      "exit_px": 10998.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-11-12 11:45:00-05:00",
+      "exit_time": "2020-11-12 12:41:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11861.25,
+      "exit_px": 11860.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2020-11-23 11:45:00-05:00",
+      "exit_time": "2020-11-23 12:02:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11834.5,
+      "exit_px": 11834.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2020-11-25 11:45:00-05:00",
+      "exit_time": "2020-11-25 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12093.5,
+      "exit_px": 12093.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2020-12-09 11:45:00-05:00",
+      "exit_time": "2020-12-09 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12585.0,
+      "exit_px": 12574.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-12-11 11:45:00-05:00",
+      "exit_time": "2020-12-11 12:13:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12262.5,
+      "exit_px": 12262.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2020-12-22 11:45:00-05:00",
+      "exit_time": "2020-12-22 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12609.25,
+      "exit_px": 12598.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2020-12-31 11:45:00-05:00",
+      "exit_time": "2020-12-31 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12827.75,
+      "exit_px": 12827.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-01-04 11:45:00-05:00",
+      "exit_time": "2021-01-04 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12695.0,
+      "exit_px": 12694.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-01-12 11:45:00-05:00",
+      "exit_time": "2021-01-12 11:47:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12887.0,
+      "exit_px": 12876.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-01-14 11:45:00-05:00",
+      "exit_time": "2021-01-14 11:49:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12988.0,
+      "exit_px": 12977.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-01-26 11:45:00-05:00",
+      "exit_time": "2021-01-26 11:49:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13471.5,
+      "exit_px": 13461.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-01-27 11:45:00-05:00",
+      "exit_time": "2021-01-27 11:48:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13254.75,
+      "exit_px": 13244.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-01-29 11:45:00-05:00",
+      "exit_time": "2021-01-29 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13001.75,
+      "exit_px": 12991.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-02-08 11:45:00-05:00",
+      "exit_time": "2021-02-08 13:00:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13609.75,
+      "exit_px": 13630.0,
+      "reason": "max_hold",
+      "net_pnl": 220.32
+    },
+    {
+      "entry_time": "2021-02-16 11:45:00-05:00",
+      "exit_time": "2021-02-16 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13792.0,
+      "exit_px": 13781.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-02-17 11:45:00-05:00",
+      "exit_time": "2021-02-17 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13561.0,
+      "exit_px": 13550.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-02-18 11:45:00-05:00",
+      "exit_time": "2021-02-18 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13534.25,
+      "exit_px": 13523.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-02-22 11:45:00-05:00",
+      "exit_time": "2021-02-22 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13340.25,
+      "exit_px": 13329.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-02-23 11:45:00-05:00",
+      "exit_time": "2021-02-23 11:47:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12988.0,
+      "exit_px": 12977.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-02-25 11:45:00-05:00",
+      "exit_time": "2021-02-25 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13042.5,
+      "exit_px": 13032.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-03-02 11:45:00-05:00",
+      "exit_time": "2021-03-02 11:47:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13119.75,
+      "exit_px": 13109.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-03-08 11:45:00-05:00",
+      "exit_time": "2021-03-08 11:50:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12537.25,
+      "exit_px": 12526.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-03-10 11:45:00-05:00",
+      "exit_time": "2021-03-10 12:33:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12773.5,
+      "exit_px": 12773.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-03-15 11:45:00-04:00",
+      "exit_time": "2021-03-15 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12916.25,
+      "exit_px": 12960.25,
+      "reason": "max_hold",
+      "net_pnl": 505.32
+    },
+    {
+      "entry_time": "2021-03-17 11:45:00-04:00",
+      "exit_time": "2021-03-17 12:01:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12972.5,
+      "exit_px": 12972.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-03-18 11:45:00-04:00",
+      "exit_time": "2021-03-18 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12975.5,
+      "exit_px": 12965.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-03-25 11:45:00-04:00",
+      "exit_time": "2021-03-25 11:48:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12643.0,
+      "exit_px": 12632.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-04-07 11:45:00-04:00",
+      "exit_time": "2021-04-07 12:16:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13575.75,
+      "exit_px": 13575.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-04-14 11:45:00-04:00",
+      "exit_time": "2021-04-14 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13897.5,
+      "exit_px": 13897.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-04-19 11:45:00-04:00",
+      "exit_time": "2021-04-19 12:02:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13869.5,
+      "exit_px": 13869.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-04-20 11:45:00-04:00",
+      "exit_time": "2021-04-20 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13752.75,
+      "exit_px": 13774.25,
+      "reason": "max_hold",
+      "net_pnl": 235.32
+    },
+    {
+      "entry_time": "2021-04-28 11:45:00-04:00",
+      "exit_time": "2021-04-28 11:47:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13904.0,
+      "exit_px": 13893.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-04-29 11:45:00-04:00",
+      "exit_time": "2021-04-29 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13906.25,
+      "exit_px": 13905.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-05-04 11:45:00-04:00",
+      "exit_time": "2021-05-04 11:48:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13418.5,
+      "exit_px": 13408.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-05-12 11:45:00-04:00",
+      "exit_time": "2021-05-12 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13073.75,
+      "exit_px": 13063.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-05-13 11:45:00-04:00",
+      "exit_time": "2021-05-13 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13065.25,
+      "exit_px": 13064.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-05-17 11:45:00-04:00",
+      "exit_time": "2021-05-17 11:49:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13258.75,
+      "exit_px": 13248.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-05-18 11:45:00-04:00",
+      "exit_time": "2021-05-18 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13340.5,
+      "exit_px": 13330.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-05-21 11:45:00-04:00",
+      "exit_time": "2021-05-21 11:49:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13446.25,
+      "exit_px": 13435.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-05-25 11:45:00-04:00",
+      "exit_time": "2021-05-25 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13623.0,
+      "exit_px": 13622.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-06-07 11:45:00-04:00",
+      "exit_time": "2021-06-07 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13727.25,
+      "exit_px": 13762.25,
+      "reason": "max_hold",
+      "net_pnl": 397.32
+    },
+    {
+      "entry_time": "2021-06-08 11:45:00-04:00",
+      "exit_time": "2021-06-08 11:50:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13786.0,
+      "exit_px": 13775.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-06-15 11:45:00-04:00",
+      "exit_time": "2021-06-15 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14056.25,
+      "exit_px": 14055.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-06-16 11:45:00-04:00",
+      "exit_time": "2021-06-16 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14045.0,
+      "exit_px": 14044.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-06-30 11:45:00-04:00",
+      "exit_time": "2021-06-30 12:24:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14543.0,
+      "exit_px": 14542.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-07-01 11:45:00-04:00",
+      "exit_time": "2021-07-01 12:35:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14499.75,
+      "exit_px": 14499.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-07-05 11:45:00-04:00",
+      "exit_time": "2021-07-05 11:52:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14693.75,
+      "exit_px": 14693.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-07-06 11:45:00-04:00",
+      "exit_time": "2021-07-06 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14718.5,
+      "exit_px": 14708.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-07-14 11:45:00-04:00",
+      "exit_time": "2021-07-14 11:47:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14906.5,
+      "exit_px": 14896.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-07-16 11:45:00-04:00",
+      "exit_time": "2021-07-16 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14714.5,
+      "exit_px": 14704.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-07-27 11:45:00-04:00",
+      "exit_time": "2021-07-27 12:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14843.0,
+      "exit_px": 14842.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-07-30 11:45:00-04:00",
+      "exit_time": "2021-07-30 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14923.0,
+      "exit_px": 14922.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-08-04 11:45:00-04:00",
+      "exit_time": "2021-08-04 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15023.75,
+      "exit_px": 15070.5,
+      "reason": "max_hold",
+      "net_pnl": 538.32
+    },
+    {
+      "entry_time": "2021-08-06 11:45:00-04:00",
+      "exit_time": "2021-08-06 12:15:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15077.75,
+      "exit_px": 15077.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-08-11 11:45:00-04:00",
+      "exit_time": "2021-08-11 11:48:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14982.0,
+      "exit_px": 14971.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-08-17 11:45:00-04:00",
+      "exit_time": "2021-08-17 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14977.75,
+      "exit_px": 14977.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-08-18 11:45:00-04:00",
+      "exit_time": "2021-08-18 11:49:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14986.0,
+      "exit_px": 14975.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-08-20 11:45:00-04:00",
+      "exit_time": "2021-08-20 11:47:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15031.5,
+      "exit_px": 15021.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-08-26 11:45:00-04:00",
+      "exit_time": "2021-08-26 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15302.25,
+      "exit_px": 15328.75,
+      "reason": "max_hold",
+      "net_pnl": 295.32
+    },
+    {
+      "entry_time": "2021-09-08 11:45:00-04:00",
+      "exit_time": "2021-09-08 11:49:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15555.5,
+      "exit_px": 15545.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-09-09 11:45:00-04:00",
+      "exit_time": "2021-09-09 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15626.25,
+      "exit_px": 15625.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-09-10 11:45:00-04:00",
+      "exit_time": "2021-09-10 11:49:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15561.5,
+      "exit_px": 15551.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-09-13 11:45:00-04:00",
+      "exit_time": "2021-09-13 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15382.25,
+      "exit_px": 15381.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-09-16 11:45:00-04:00",
+      "exit_time": "2021-09-16 11:52:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15398.5,
+      "exit_px": 15398.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-09-20 11:45:00-04:00",
+      "exit_time": "2021-09-20 11:50:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14990.5,
+      "exit_px": 14980.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-09-27 11:45:00-04:00",
+      "exit_time": "2021-09-27 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15148.5,
+      "exit_px": 15138.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-09-28 11:45:00-04:00",
+      "exit_time": "2021-09-28 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14785.75,
+      "exit_px": 14775.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-09-29 11:45:00-04:00",
+      "exit_time": "2021-09-29 12:10:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14773.25,
+      "exit_px": 14772.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-09-30 11:45:00-04:00",
+      "exit_time": "2021-09-30 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14755.25,
+      "exit_px": 14744.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-10-04 11:45:00-04:00",
+      "exit_time": "2021-10-04 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14400.75,
+      "exit_px": 14400.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-10-08 11:45:00-04:00",
+      "exit_time": "2021-10-08 11:50:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14826.25,
+      "exit_px": 14815.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-10-15 11:45:00-04:00",
+      "exit_time": "2021-10-15 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15073.5,
+      "exit_px": 15073.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-10-22 11:45:00-04:00",
+      "exit_time": "2021-10-22 11:47:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15300.0,
+      "exit_px": 15289.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-10-26 11:45:00-04:00",
+      "exit_time": "2021-10-26 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15632.5,
+      "exit_px": 15622.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-11-10 11:45:00-05:00",
+      "exit_time": "2021-11-10 12:43:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 16117.0,
+      "exit_px": 16116.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-11-15 11:45:00-05:00",
+      "exit_time": "2021-11-15 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 16105.5,
+      "exit_px": 16095.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-11-22 11:45:00-05:00",
+      "exit_time": "2021-11-22 11:48:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 16580.5,
+      "exit_px": 16570.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-11-23 11:45:00-05:00",
+      "exit_time": "2021-11-23 11:58:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 16205.25,
+      "exit_px": 16204.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-11-26 11:45:00-05:00",
+      "exit_time": "2021-11-26 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 16094.25,
+      "exit_px": 16083.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-11-30 11:45:00-05:00",
+      "exit_time": "2021-11-30 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 16119.25,
+      "exit_px": 16108.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-12-03 11:45:00-05:00",
+      "exit_time": "2021-12-03 11:49:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15622.75,
+      "exit_px": 15612.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-12-13 11:45:00-05:00",
+      "exit_time": "2021-12-13 11:47:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 16147.0,
+      "exit_px": 16136.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-12-14 11:45:00-05:00",
+      "exit_time": "2021-12-14 11:57:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15771.0,
+      "exit_px": 15770.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-12-15 11:45:00-05:00",
+      "exit_time": "2021-12-15 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15782.0,
+      "exit_px": 15771.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-12-16 11:45:00-05:00",
+      "exit_time": "2021-12-16 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 16025.5,
+      "exit_px": 16015.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-12-20 11:45:00-05:00",
+      "exit_time": "2021-12-20 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15523.25,
+      "exit_px": 15512.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2021-12-28 11:45:00-05:00",
+      "exit_time": "2021-12-28 12:31:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 16506.0,
+      "exit_px": 16505.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2021-12-29 11:45:00-05:00",
+      "exit_time": "2021-12-29 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 16448.0,
+      "exit_px": 16447.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-01-04 11:45:00-05:00",
+      "exit_time": "2022-01-04 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 16232.25,
+      "exit_px": 16231.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-01-05 11:45:00-05:00",
+      "exit_time": "2022-01-05 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 16129.25,
+      "exit_px": 16118.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-01-07 11:45:00-05:00",
+      "exit_time": "2022-01-07 12:21:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15602.75,
+      "exit_px": 15602.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-01-18 11:45:00-05:00",
+      "exit_time": "2022-01-18 12:01:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15320.25,
+      "exit_px": 15319.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-01-19 11:45:00-05:00",
+      "exit_time": "2022-01-19 12:08:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15130.5,
+      "exit_px": 15230.0,
+      "reason": "take_profit",
+      "net_pnl": 1171.32
+    },
+    {
+      "entry_time": "2022-01-20 11:45:00-05:00",
+      "exit_time": "2022-01-20 12:54:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15243.0,
+      "exit_px": 15242.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-01-24 11:45:00-05:00",
+      "exit_time": "2022-01-24 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13909.5,
+      "exit_px": 13899.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-01-25 11:45:00-05:00",
+      "exit_time": "2022-01-25 11:57:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14056.75,
+      "exit_px": 14056.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-02-02 11:45:00-05:00",
+      "exit_time": "2022-02-02 12:16:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14974.5,
+      "exit_px": 15074.0,
+      "reason": "take_profit",
+      "net_pnl": 1171.32
+    },
+    {
+      "entry_time": "2022-02-03 11:45:00-05:00",
+      "exit_time": "2022-02-03 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14722.75,
+      "exit_px": 14712.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-02-07 11:45:00-05:00",
+      "exit_time": "2022-02-07 11:48:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14578.75,
+      "exit_px": 14568.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-02-10 11:45:00-05:00",
+      "exit_time": "2022-02-10 12:45:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14907.0,
+      "exit_px": 14906.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-02-11 11:45:00-05:00",
+      "exit_time": "2022-02-11 11:47:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14542.0,
+      "exit_px": 14531.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-02-16 11:45:00-05:00",
+      "exit_time": "2022-02-16 12:18:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14435.0,
+      "exit_px": 14434.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-02-17 11:45:00-05:00",
+      "exit_time": "2022-02-17 11:57:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14374.75,
+      "exit_px": 14374.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-02-18 11:45:00-05:00",
+      "exit_time": "2022-02-18 11:49:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14032.25,
+      "exit_px": 14021.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-02-21 11:45:00-05:00",
+      "exit_time": "2022-02-21 11:50:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13797.25,
+      "exit_px": 13786.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-02-22 11:45:00-05:00",
+      "exit_time": "2022-02-22 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13891.0,
+      "exit_px": 13890.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-02-23 11:45:00-05:00",
+      "exit_time": "2022-02-23 12:21:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13758.75,
+      "exit_px": 13858.25,
+      "reason": "take_profit",
+      "net_pnl": 1171.32
+    },
+    {
+      "entry_time": "2022-03-01 11:45:00-05:00",
+      "exit_time": "2022-03-01 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14086.0,
+      "exit_px": 14075.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-03-07 11:45:00-05:00",
+      "exit_time": "2022-03-07 11:55:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13582.0,
+      "exit_px": 13581.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-03-08 11:45:00-05:00",
+      "exit_time": "2022-03-08 11:55:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13151.5,
+      "exit_px": 13251.0,
+      "reason": "take_profit",
+      "net_pnl": 1171.32
+    },
+    {
+      "entry_time": "2022-03-10 11:45:00-05:00",
+      "exit_time": "2022-03-10 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13438.0,
+      "exit_px": 13427.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-03-11 11:45:00-05:00",
+      "exit_time": "2022-03-11 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13455.0,
+      "exit_px": 13454.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-03-14 11:45:00-04:00",
+      "exit_time": "2022-03-14 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13201.25,
+      "exit_px": 13190.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-03-25 11:45:00-04:00",
+      "exit_time": "2022-03-25 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14637.75,
+      "exit_px": 14627.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-03-28 11:45:00-04:00",
+      "exit_time": "2022-03-28 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14774.5,
+      "exit_px": 14764.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-03-30 11:45:00-04:00",
+      "exit_time": "2022-03-30 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15139.25,
+      "exit_px": 15138.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-04-01 11:45:00-04:00",
+      "exit_time": "2022-04-01 11:56:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14778.25,
+      "exit_px": 14777.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-04-05 11:45:00-04:00",
+      "exit_time": "2022-04-05 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14907.75,
+      "exit_px": 14897.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-04-06 11:45:00-04:00",
+      "exit_time": "2022-04-06 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14496.0,
+      "exit_px": 14485.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-04-07 11:45:00-04:00",
+      "exit_time": "2022-04-07 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14391.5,
+      "exit_px": 14391.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-04-14 11:45:00-04:00",
+      "exit_time": "2022-04-14 11:53:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14018.25,
+      "exit_px": 14017.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-04-18 11:45:00-04:00",
+      "exit_time": "2022-04-18 11:47:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13867.0,
+      "exit_px": 13856.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-04-21 11:45:00-04:00",
+      "exit_time": "2022-04-21 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14020.25,
+      "exit_px": 14009.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-04-22 11:45:00-04:00",
+      "exit_time": "2022-04-22 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13533.0,
+      "exit_px": 13532.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-04-25 11:45:00-04:00",
+      "exit_time": "2022-04-25 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13284.25,
+      "exit_px": 13273.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-04-26 11:45:00-04:00",
+      "exit_time": "2022-04-26 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13138.5,
+      "exit_px": 13128.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-05-02 11:45:00-04:00",
+      "exit_time": "2022-05-02 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12847.5,
+      "exit_px": 12837.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-05-04 11:45:00-04:00",
+      "exit_time": "2022-05-04 12:22:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12914.25,
+      "exit_px": 13013.75,
+      "reason": "take_profit",
+      "net_pnl": 1171.32
+    },
+    {
+      "entry_time": "2022-05-05 11:45:00-04:00",
+      "exit_time": "2022-05-05 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12934.0,
+      "exit_px": 12923.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-05-09 11:45:00-04:00",
+      "exit_time": "2022-05-09 11:49:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12319.75,
+      "exit_px": 12309.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-05-18 11:45:00-04:00",
+      "exit_time": "2022-05-18 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12181.75,
+      "exit_px": 12171.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-05-20 11:45:00-04:00",
+      "exit_time": "2022-05-20 11:54:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11739.0,
+      "exit_px": 11738.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-06-01 11:45:00-04:00",
+      "exit_time": "2022-06-01 11:53:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12507.0,
+      "exit_px": 12506.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-06-03 11:45:00-04:00",
+      "exit_time": "2022-06-03 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12552.0,
+      "exit_px": 12541.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-06-06 11:45:00-04:00",
+      "exit_time": "2022-06-06 11:48:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12673.5,
+      "exit_px": 12663.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-06-10 11:45:00-04:00",
+      "exit_time": "2022-06-10 11:49:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11849.0,
+      "exit_px": 11838.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-06-16 11:45:00-04:00",
+      "exit_time": "2022-06-16 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11137.5,
+      "exit_px": 11127.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-06-28 11:45:00-04:00",
+      "exit_time": "2022-06-28 11:48:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11817.25,
+      "exit_px": 11806.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-07-06 11:45:00-04:00",
+      "exit_time": "2022-07-06 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11768.25,
+      "exit_px": 11826.75,
+      "reason": "max_hold",
+      "net_pnl": 679.32
+    },
+    {
+      "entry_time": "2022-07-11 11:45:00-04:00",
+      "exit_time": "2022-07-11 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11925.25,
+      "exit_px": 11914.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-07-13 11:45:00-04:00",
+      "exit_time": "2022-07-13 12:59:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11716.25,
+      "exit_px": 11815.75,
+      "reason": "take_profit",
+      "net_pnl": 1171.32
+    },
+    {
+      "entry_time": "2022-07-22 11:45:00-04:00",
+      "exit_time": "2022-07-22 12:05:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12444.0,
+      "exit_px": 12443.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-07-26 11:45:00-04:00",
+      "exit_time": "2022-07-26 11:48:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12143.25,
+      "exit_px": 12132.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-08-05 11:45:00-04:00",
+      "exit_time": "2022-08-05 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13109.75,
+      "exit_px": 13200.75,
+      "reason": "max_hold",
+      "net_pnl": 1069.32
+    },
+    {
+      "entry_time": "2022-08-08 11:45:00-04:00",
+      "exit_time": "2022-08-08 12:09:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13207.25,
+      "exit_px": 13206.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-08-09 11:45:00-04:00",
+      "exit_time": "2022-08-09 11:50:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13032.25,
+      "exit_px": 13021.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-08-11 11:45:00-04:00",
+      "exit_time": "2022-08-11 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13422.0,
+      "exit_px": 13411.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-08-17 11:45:00-04:00",
+      "exit_time": "2022-08-17 11:48:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13425.5,
+      "exit_px": 13415.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-08-19 11:45:00-04:00",
+      "exit_time": "2022-08-19 11:55:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13273.25,
+      "exit_px": 13272.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-08-22 11:45:00-04:00",
+      "exit_time": "2022-08-22 12:10:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12972.0,
+      "exit_px": 12971.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-08-26 11:45:00-04:00",
+      "exit_time": "2022-08-26 11:57:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12805.75,
+      "exit_px": 12805.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-08-29 11:45:00-04:00",
+      "exit_time": "2022-08-29 12:16:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12459.25,
+      "exit_px": 12558.75,
+      "reason": "take_profit",
+      "net_pnl": 1171.32
+    },
+    {
+      "entry_time": "2022-08-30 11:45:00-04:00",
+      "exit_time": "2022-08-30 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12343.75,
+      "exit_px": 12333.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-09-01 11:45:00-04:00",
+      "exit_time": "2022-09-01 11:52:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12038.0,
+      "exit_px": 12037.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-09-13 11:45:00-04:00",
+      "exit_time": "2022-09-13 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12202.75,
+      "exit_px": 12192.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-09-19 11:45:00-04:00",
+      "exit_time": "2022-09-19 11:54:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11884.75,
+      "exit_px": 11884.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-09-22 11:45:00-04:00",
+      "exit_time": "2022-09-22 11:59:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11553.25,
+      "exit_px": 11552.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-09-23 11:45:00-04:00",
+      "exit_time": "2022-09-23 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11359.25,
+      "exit_px": 11348.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-09-26 11:45:00-04:00",
+      "exit_time": "2022-09-26 12:21:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11366.75,
+      "exit_px": 11366.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-09-27 11:45:00-04:00",
+      "exit_time": "2022-09-27 11:49:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11392.0,
+      "exit_px": 11381.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-09-30 11:45:00-04:00",
+      "exit_time": "2022-09-30 11:49:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11264.75,
+      "exit_px": 11254.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-10-07 11:45:00-04:00",
+      "exit_time": "2022-10-07 11:49:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11179.5,
+      "exit_px": 11169.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-10-14 11:45:00-04:00",
+      "exit_time": "2022-10-14 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 10873.75,
+      "exit_px": 10863.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-10-18 11:45:00-04:00",
+      "exit_time": "2022-10-18 12:37:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11123.5,
+      "exit_px": 11223.0,
+      "reason": "take_profit",
+      "net_pnl": 1171.32
+    },
+    {
+      "entry_time": "2022-10-27 11:45:00-04:00",
+      "exit_time": "2022-10-27 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11301.0,
+      "exit_px": 11300.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-11-01 11:45:00-04:00",
+      "exit_time": "2022-11-01 12:34:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11333.0,
+      "exit_px": 11332.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-11-02 11:45:00-04:00",
+      "exit_time": "2022-11-02 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11238.5,
+      "exit_px": 11238.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-11-03 11:45:00-04:00",
+      "exit_time": "2022-11-03 11:50:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 10787.0,
+      "exit_px": 10776.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-11-04 11:45:00-04:00",
+      "exit_time": "2022-11-04 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 10769.0,
+      "exit_px": 10758.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-11-18 11:45:00-05:00",
+      "exit_time": "2022-11-18 11:47:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11681.25,
+      "exit_px": 11670.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-11-21 11:45:00-05:00",
+      "exit_time": "2022-11-21 11:56:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11590.75,
+      "exit_px": 11590.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-11-25 11:45:00-05:00",
+      "exit_time": "2022-11-25 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11795.75,
+      "exit_px": 11795.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-11-28 11:45:00-05:00",
+      "exit_time": "2022-11-28 12:03:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11697.75,
+      "exit_px": 11697.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-11-29 11:45:00-05:00",
+      "exit_time": "2022-11-29 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11503.75,
+      "exit_px": 11503.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-12-05 11:45:00-05:00",
+      "exit_time": "2022-12-05 11:52:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11870.0,
+      "exit_px": 11869.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-12-06 11:45:00-05:00",
+      "exit_time": "2022-12-06 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11632.5,
+      "exit_px": 11632.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2022-12-15 11:45:00-05:00",
+      "exit_time": "2022-12-15 11:50:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11368.5,
+      "exit_px": 11358.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-12-19 11:45:00-05:00",
+      "exit_time": "2022-12-19 13:00:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11200.5,
+      "exit_px": 11229.25,
+      "reason": "max_hold",
+      "net_pnl": 322.32
+    },
+    {
+      "entry_time": "2022-12-22 11:45:00-05:00",
+      "exit_time": "2022-12-22 11:47:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 10977.5,
+      "exit_px": 10967.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2022-12-28 11:45:00-05:00",
+      "exit_time": "2022-12-28 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 10816.75,
+      "exit_px": 10806.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2023-01-03 11:45:00-05:00",
+      "exit_time": "2023-01-03 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 10877.75,
+      "exit_px": 10867.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2023-01-13 11:45:00-05:00",
+      "exit_time": "2023-01-13 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11478.75,
+      "exit_px": 11468.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2023-01-16 11:45:00-05:00",
+      "exit_time": "2023-01-16 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11573.75,
+      "exit_px": 11573.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-01-18 11:45:00-05:00",
+      "exit_time": "2023-01-18 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11529.75,
+      "exit_px": 11529.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-01-19 11:45:00-05:00",
+      "exit_time": "2023-01-19 13:00:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11311.75,
+      "exit_px": 11356.25,
+      "reason": "max_hold",
+      "net_pnl": 511.32
+    },
+    {
+      "entry_time": "2023-01-30 11:45:00-05:00",
+      "exit_time": "2023-01-30 11:48:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12047.25,
+      "exit_px": 12036.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2023-02-08 11:45:00-05:00",
+      "exit_time": "2023-02-08 13:00:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12533.25,
+      "exit_px": 12592.0,
+      "reason": "max_hold",
+      "net_pnl": 682.32
+    },
+    {
+      "entry_time": "2023-02-10 11:45:00-05:00",
+      "exit_time": "2023-02-10 11:47:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12313.25,
+      "exit_px": 12302.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2023-02-14 11:45:00-05:00",
+      "exit_time": "2023-02-14 11:53:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12426.5,
+      "exit_px": 12426.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-02-17 11:45:00-05:00",
+      "exit_time": "2023-02-17 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12311.0,
+      "exit_px": 12310.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-02-21 11:45:00-05:00",
+      "exit_time": "2023-02-21 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12169.5,
+      "exit_px": 12169.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-02-23 11:45:00-05:00",
+      "exit_time": "2023-02-23 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12047.25,
+      "exit_px": 12046.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-02-28 11:45:00-05:00",
+      "exit_time": "2023-02-28 11:47:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12079.25,
+      "exit_px": 12068.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2023-03-02 11:45:00-05:00",
+      "exit_time": "2023-03-02 11:52:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 11890.75,
+      "exit_px": 11890.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-03-21 11:45:00-04:00",
+      "exit_time": "2023-03-21 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12727.0,
+      "exit_px": 12716.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2023-03-27 11:45:00-04:00",
+      "exit_time": "2023-03-27 11:50:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12827.25,
+      "exit_px": 12816.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2023-04-03 11:45:00-04:00",
+      "exit_time": "2023-04-03 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13166.0,
+      "exit_px": 13166.25,
+      "reason": "max_hold",
+      "net_pnl": -19.68
+    },
+    {
+      "entry_time": "2023-04-04 11:45:00-04:00",
+      "exit_time": "2023-04-04 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13236.25,
+      "exit_px": 13235.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-04-05 11:45:00-04:00",
+      "exit_time": "2023-04-05 11:52:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13040.0,
+      "exit_px": 13039.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-04-11 11:45:00-04:00",
+      "exit_time": "2023-04-11 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13062.0,
+      "exit_px": 13100.0,
+      "reason": "max_hold",
+      "net_pnl": 433.32
+    },
+    {
+      "entry_time": "2023-04-14 11:45:00-04:00",
+      "exit_time": "2023-04-14 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13126.5,
+      "exit_px": 13126.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-04-17 11:45:00-04:00",
+      "exit_time": "2023-04-17 11:58:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13097.75,
+      "exit_px": 13097.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-04-18 11:45:00-04:00",
+      "exit_time": "2023-04-18 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13171.25,
+      "exit_px": 13170.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-04-24 11:45:00-04:00",
+      "exit_time": "2023-04-24 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12986.25,
+      "exit_px": 12985.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-04-25 11:45:00-04:00",
+      "exit_time": "2023-04-25 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 12935.0,
+      "exit_px": 12934.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-05-02 11:45:00-04:00",
+      "exit_time": "2023-05-02 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13152.0,
+      "exit_px": 13151.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-05-03 11:45:00-04:00",
+      "exit_time": "2023-05-03 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13185.75,
+      "exit_px": 13224.75,
+      "reason": "max_hold",
+      "net_pnl": 445.32
+    },
+    {
+      "entry_time": "2023-05-09 11:45:00-04:00",
+      "exit_time": "2023-05-09 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13279.75,
+      "exit_px": 13279.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-05-12 11:45:00-04:00",
+      "exit_time": "2023-05-12 12:11:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13376.5,
+      "exit_px": 13376.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-05-19 11:45:00-04:00",
+      "exit_time": "2023-05-19 12:02:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13851.75,
+      "exit_px": 13851.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-05-22 11:45:00-04:00",
+      "exit_time": "2023-05-22 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13891.5,
+      "exit_px": 13891.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-05-24 11:45:00-04:00",
+      "exit_time": "2023-05-24 11:59:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 13595.0,
+      "exit_px": 13594.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-05-31 11:45:00-04:00",
+      "exit_time": "2023-05-31 12:28:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14273.0,
+      "exit_px": 14272.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-06-07 11:45:00-04:00",
+      "exit_time": "2023-06-07 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14455.75,
+      "exit_px": 14455.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-06-21 11:45:00-04:00",
+      "exit_time": "2023-06-21 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15058.25,
+      "exit_px": 15057.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-06-26 11:45:00-04:00",
+      "exit_time": "2023-06-26 12:03:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14985.75,
+      "exit_px": 14985.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-07-03 11:45:00-04:00",
+      "exit_time": "2023-07-03 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15316.0,
+      "exit_px": 15315.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-07-10 11:45:00-04:00",
+      "exit_time": "2023-07-10 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15137.5,
+      "exit_px": 15127.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2023-07-11 11:45:00-04:00",
+      "exit_time": "2023-07-11 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15170.5,
+      "exit_px": 15218.5,
+      "reason": "max_hold",
+      "net_pnl": 553.32
+    },
+    {
+      "entry_time": "2023-07-12 11:45:00-04:00",
+      "exit_time": "2023-07-12 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15377.75,
+      "exit_px": 15367.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2023-07-24 11:45:00-04:00",
+      "exit_time": "2023-07-24 12:50:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15535.0,
+      "exit_px": 15534.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-08-02 11:45:00-04:00",
+      "exit_time": "2023-08-02 11:48:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15495.5,
+      "exit_px": 15485.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2023-08-08 11:45:00-04:00",
+      "exit_time": "2023-08-08 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15239.25,
+      "exit_px": 15228.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2023-08-09 11:45:00-04:00",
+      "exit_time": "2023-08-09 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15174.5,
+      "exit_px": 15164.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2023-08-10 11:45:00-04:00",
+      "exit_time": "2023-08-10 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15284.25,
+      "exit_px": 15273.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2023-08-11 11:45:00-04:00",
+      "exit_time": "2023-08-11 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15061.25,
+      "exit_px": 15050.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2023-08-16 11:45:00-04:00",
+      "exit_time": "2023-08-16 11:47:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15076.75,
+      "exit_px": 15066.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2023-08-17 11:45:00-04:00",
+      "exit_time": "2023-08-17 11:49:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14879.5,
+      "exit_px": 14869.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2023-08-21 11:45:00-04:00",
+      "exit_time": "2023-08-21 12:48:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14795.75,
+      "exit_px": 14895.25,
+      "reason": "take_profit",
+      "net_pnl": 1171.32
+    },
+    {
+      "entry_time": "2023-08-24 11:45:00-04:00",
+      "exit_time": "2023-08-24 11:47:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14974.0,
+      "exit_px": 14963.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2023-08-28 11:45:00-04:00",
+      "exit_time": "2023-08-28 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15002.5,
+      "exit_px": 14992.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2023-08-31 11:45:00-04:00",
+      "exit_time": "2023-08-31 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15559.75,
+      "exit_px": 15559.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-09-01 11:45:00-04:00",
+      "exit_time": "2023-09-01 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15494.25,
+      "exit_px": 15483.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2023-09-12 11:45:00-04:00",
+      "exit_time": "2023-09-12 11:55:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15359.0,
+      "exit_px": 15358.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-09-19 11:45:00-04:00",
+      "exit_time": "2023-09-19 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15280.5,
+      "exit_px": 15280.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-09-20 11:45:00-04:00",
+      "exit_time": "2023-09-20 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15339.5,
+      "exit_px": 15373.75,
+      "reason": "max_hold",
+      "net_pnl": 388.32
+    },
+    {
+      "entry_time": "2023-09-21 11:45:00-04:00",
+      "exit_time": "2023-09-21 11:52:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14957.5,
+      "exit_px": 14957.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-09-27 11:45:00-04:00",
+      "exit_time": "2023-09-27 11:47:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14689.0,
+      "exit_px": 14678.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2023-09-29 11:45:00-04:00",
+      "exit_time": "2023-09-29 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14932.75,
+      "exit_px": 14932.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-10-03 11:45:00-04:00",
+      "exit_time": "2023-10-03 11:48:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14732.5,
+      "exit_px": 14722.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2023-10-05 11:45:00-04:00",
+      "exit_time": "2023-10-05 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14750.25,
+      "exit_px": 14803.0,
+      "reason": "max_hold",
+      "net_pnl": 610.32
+    },
+    {
+      "entry_time": "2023-10-11 11:45:00-04:00",
+      "exit_time": "2023-10-11 12:05:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15299.25,
+      "exit_px": 15298.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-10-13 11:45:00-04:00",
+      "exit_time": "2023-10-13 11:49:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15159.75,
+      "exit_px": 15149.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2023-10-20 11:45:00-04:00",
+      "exit_time": "2023-10-20 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14683.75,
+      "exit_px": 14768.25,
+      "reason": "max_hold",
+      "net_pnl": 991.32
+    },
+    {
+      "entry_time": "2023-10-24 11:45:00-04:00",
+      "exit_time": "2023-10-24 12:15:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14790.5,
+      "exit_px": 14790.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-10-25 11:45:00-04:00",
+      "exit_time": "2023-10-25 11:48:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14610.75,
+      "exit_px": 14600.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2023-10-26 11:45:00-04:00",
+      "exit_time": "2023-10-26 12:06:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14230.75,
+      "exit_px": 14230.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-10-31 11:45:00-04:00",
+      "exit_time": "2023-10-31 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 14382.75,
+      "exit_px": 14372.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2023-11-06 11:45:00-05:00",
+      "exit_time": "2023-11-06 11:47:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15207.0,
+      "exit_px": 15196.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2023-11-15 11:45:00-05:00",
+      "exit_time": "2023-11-15 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15913.5,
+      "exit_px": 15913.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-11-16 11:45:00-05:00",
+      "exit_time": "2023-11-16 13:00:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15820.5,
+      "exit_px": 15883.0,
+      "reason": "max_hold",
+      "net_pnl": 727.32
+    },
+    {
+      "entry_time": "2023-11-21 11:45:00-05:00",
+      "exit_time": "2023-11-21 13:00:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15939.25,
+      "exit_px": 15982.25,
+      "reason": "max_hold",
+      "net_pnl": 493.32
+    },
+    {
+      "entry_time": "2023-11-29 11:45:00-05:00",
+      "exit_time": "2023-11-29 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 16057.75,
+      "exit_px": 16057.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-11-30 11:45:00-05:00",
+      "exit_time": "2023-11-30 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15888.25,
+      "exit_px": 15877.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2023-12-06 11:45:00-05:00",
+      "exit_time": "2023-12-06 12:56:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 15870.5,
+      "exit_px": 15870.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-12-08 11:45:00-05:00",
+      "exit_time": "2023-12-08 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 16024.25,
+      "exit_px": 16023.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-12-22 11:45:00-05:00",
+      "exit_time": "2023-12-22 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 16990.0,
+      "exit_px": 16989.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2023-12-29 11:45:00-05:00",
+      "exit_time": "2023-12-29 12:14:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 16957.25,
+      "exit_px": 16956.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2024-01-03 11:45:00-05:00",
+      "exit_time": "2024-01-03 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 16577.75,
+      "exit_px": 16577.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2024-01-05 11:45:00-05:00",
+      "exit_time": "2024-01-05 11:49:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 16506.75,
+      "exit_px": 16496.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-01-11 11:45:00-05:00",
+      "exit_time": "2024-01-11 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 16770.5,
+      "exit_px": 16760.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-01-12 11:45:00-05:00",
+      "exit_time": "2024-01-12 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 16946.25,
+      "exit_px": 16935.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-01-30 11:45:00-05:00",
+      "exit_time": "2024-01-30 11:53:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 17641.5,
+      "exit_px": 17641.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2024-01-31 11:45:00-05:00",
+      "exit_time": "2024-01-31 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 17337.0,
+      "exit_px": 17336.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2024-02-06 11:45:00-05:00",
+      "exit_time": "2024-02-06 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 17628.0,
+      "exit_px": 17617.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-02-20 11:45:00-05:00",
+      "exit_time": "2024-02-20 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 17548.5,
+      "exit_px": 17548.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2024-02-27 11:45:00-05:00",
+      "exit_time": "2024-02-27 12:22:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 17974.75,
+      "exit_px": 17974.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2024-02-29 11:45:00-05:00",
+      "exit_time": "2024-02-29 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 17937.25,
+      "exit_px": 17926.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-03-04 11:45:00-05:00",
+      "exit_time": "2024-03-04 12:06:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 18301.25,
+      "exit_px": 18300.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2024-03-05 11:45:00-05:00",
+      "exit_time": "2024-03-05 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 17923.0,
+      "exit_px": 17922.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2024-03-08 11:45:00-05:00",
+      "exit_time": "2024-03-08 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 18224.75,
+      "exit_px": 18214.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-03-13 11:45:00-04:00",
+      "exit_time": "2024-03-13 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 18051.25,
+      "exit_px": 18111.5,
+      "reason": "max_hold",
+      "net_pnl": 700.32
+    },
+    {
+      "entry_time": "2024-03-14 11:45:00-04:00",
+      "exit_time": "2024-03-14 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 18035.5,
+      "exit_px": 18035.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2024-03-28 11:45:00-04:00",
+      "exit_time": "2024-03-28 12:06:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 18490.5,
+      "exit_px": 18490.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2024-04-01 11:45:00-04:00",
+      "exit_time": "2024-04-01 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 18464.0,
+      "exit_px": 18453.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-04-08 11:45:00-04:00",
+      "exit_time": "2024-04-08 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 18314.75,
+      "exit_px": 18304.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-04-10 11:45:00-04:00",
+      "exit_time": "2024-04-10 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 18132.5,
+      "exit_px": 18132.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2024-04-15 11:45:00-04:00",
+      "exit_time": "2024-04-15 12:18:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 18187.0,
+      "exit_px": 18186.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2024-04-17 11:45:00-04:00",
+      "exit_time": "2024-04-17 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 17753.25,
+      "exit_px": 17742.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-04-19 11:45:00-04:00",
+      "exit_time": "2024-04-19 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 17337.0,
+      "exit_px": 17336.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2024-04-24 11:45:00-04:00",
+      "exit_time": "2024-04-24 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 17623.75,
+      "exit_px": 17613.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-04-30 11:45:00-04:00",
+      "exit_time": "2024-04-30 11:48:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 17744.0,
+      "exit_px": 17733.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-05-08 11:45:00-04:00",
+      "exit_time": "2024-05-08 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 18178.0,
+      "exit_px": 18167.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-05-10 11:45:00-04:00",
+      "exit_time": "2024-05-10 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 18203.5,
+      "exit_px": 18245.75,
+      "reason": "max_hold",
+      "net_pnl": 484.32
+    },
+    {
+      "entry_time": "2024-05-17 11:45:00-04:00",
+      "exit_time": "2024-05-17 11:49:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 18631.75,
+      "exit_px": 18621.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-05-29 11:45:00-04:00",
+      "exit_time": "2024-05-29 11:49:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 18839.5,
+      "exit_px": 18829.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-05-31 11:45:00-04:00",
+      "exit_time": "2024-05-31 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 18317.25,
+      "exit_px": 18316.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2024-06-04 11:45:00-04:00",
+      "exit_time": "2024-06-04 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 18595.25,
+      "exit_px": 18594.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2024-06-06 11:45:00-04:00",
+      "exit_time": "2024-06-06 11:57:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 19059.0,
+      "exit_px": 19058.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2024-06-14 11:45:00-04:00",
+      "exit_time": "2024-06-14 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 19590.5,
+      "exit_px": 19580.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-06-27 11:45:00-04:00",
+      "exit_time": "2024-06-27 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 19964.5,
+      "exit_px": 20036.5,
+      "reason": "max_hold",
+      "net_pnl": 841.32
+    },
+    {
+      "entry_time": "2024-06-28 11:45:00-04:00",
+      "exit_time": "2024-06-28 11:55:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 20103.0,
+      "exit_px": 20102.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2024-07-09 11:45:00-04:00",
+      "exit_time": "2024-07-09 12:02:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 20689.5,
+      "exit_px": 20689.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2024-07-11 11:45:00-04:00",
+      "exit_time": "2024-07-11 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 20519.75,
+      "exit_px": 20509.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-07-17 11:45:00-04:00",
+      "exit_time": "2024-07-17 11:49:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 20082.0,
+      "exit_px": 20071.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-07-18 11:45:00-04:00",
+      "exit_time": "2024-07-18 11:47:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 19828.75,
+      "exit_px": 19818.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-07-19 11:45:00-04:00",
+      "exit_time": "2024-07-19 12:01:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 19726.0,
+      "exit_px": 19825.5,
+      "reason": "take_profit",
+      "net_pnl": 1171.32
+    },
+    {
+      "entry_time": "2024-07-22 11:45:00-04:00",
+      "exit_time": "2024-07-22 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 19838.0,
+      "exit_px": 19827.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-07-24 11:45:00-04:00",
+      "exit_time": "2024-07-24 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 19386.25,
+      "exit_px": 19375.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-07-29 11:45:00-04:00",
+      "exit_time": "2024-07-29 11:58:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 19164.5,
+      "exit_px": 19264.0,
+      "reason": "take_profit",
+      "net_pnl": 1171.32
+    },
+    {
+      "entry_time": "2024-07-30 11:45:00-04:00",
+      "exit_time": "2024-07-30 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 18945.5,
+      "exit_px": 18935.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-08-01 11:45:00-04:00",
+      "exit_time": "2024-08-01 11:59:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 19160.75,
+      "exit_px": 19160.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2024-08-07 11:45:00-04:00",
+      "exit_time": "2024-08-07 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 18390.25,
+      "exit_px": 18379.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-08-12 11:45:00-04:00",
+      "exit_time": "2024-08-12 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 18633.25,
+      "exit_px": 18622.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-08-22 11:45:00-04:00",
+      "exit_time": "2024-08-22 11:50:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 19681.0,
+      "exit_px": 19670.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-08-26 11:45:00-04:00",
+      "exit_time": "2024-08-26 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 19597.75,
+      "exit_px": 19587.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-08-28 11:45:00-04:00",
+      "exit_time": "2024-08-28 12:16:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 19396.25,
+      "exit_px": 19395.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2024-08-30 11:45:00-04:00",
+      "exit_time": "2024-08-30 11:48:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 19453.0,
+      "exit_px": 19442.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-09-03 11:45:00-04:00",
+      "exit_time": "2024-09-03 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 19163.25,
+      "exit_px": 19162.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2024-09-04 11:45:00-04:00",
+      "exit_time": "2024-09-04 11:56:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 18986.25,
+      "exit_px": 18985.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2024-09-05 11:45:00-04:00",
+      "exit_time": "2024-09-05 11:50:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 18882.25,
+      "exit_px": 18871.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-09-06 11:45:00-04:00",
+      "exit_time": "2024-09-06 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 18487.75,
+      "exit_px": 18477.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-09-16 11:45:00-04:00",
+      "exit_time": "2024-09-16 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 19347.75,
+      "exit_px": 19337.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-09-18 11:45:00-04:00",
+      "exit_time": "2024-09-18 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 19381.0,
+      "exit_px": 19370.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-09-27 11:45:00-04:00",
+      "exit_time": "2024-09-27 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 20281.25,
+      "exit_px": 20270.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-10-14 11:45:00-04:00",
+      "exit_time": "2024-10-14 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 20546.5,
+      "exit_px": 20606.0,
+      "reason": "max_hold",
+      "net_pnl": 691.32
+    },
+    {
+      "entry_time": "2024-10-15 11:45:00-04:00",
+      "exit_time": "2024-10-15 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 20393.25,
+      "exit_px": 20382.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-10-23 11:45:00-04:00",
+      "exit_time": "2024-10-23 11:54:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 20339.25,
+      "exit_px": 20338.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2024-10-28 11:45:00-04:00",
+      "exit_time": "2024-10-28 11:54:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 20533.75,
+      "exit_px": 20533.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2024-10-31 11:45:00-04:00",
+      "exit_time": "2024-10-31 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 20067.75,
+      "exit_px": 20057.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-11-04 11:45:00-05:00",
+      "exit_time": "2024-11-04 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 20108.25,
+      "exit_px": 20097.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-11-12 11:45:00-05:00",
+      "exit_time": "2024-11-12 11:48:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 21155.75,
+      "exit_px": 21145.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-11-13 11:45:00-05:00",
+      "exit_time": "2024-11-13 12:16:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 21111.5,
+      "exit_px": 21211.0,
+      "reason": "take_profit",
+      "net_pnl": 1171.32
+    },
+    {
+      "entry_time": "2024-11-15 11:45:00-05:00",
+      "exit_time": "2024-11-15 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 20536.0,
+      "exit_px": 20535.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2024-11-22 11:45:00-05:00",
+      "exit_time": "2024-11-22 12:50:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 20759.0,
+      "exit_px": 20858.5,
+      "reason": "take_profit",
+      "net_pnl": 1171.32
+    },
+    {
+      "entry_time": "2024-11-27 11:45:00-05:00",
+      "exit_time": "2024-11-27 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 20726.0,
+      "exit_px": 20715.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-12-09 11:45:00-05:00",
+      "exit_time": "2024-12-09 12:06:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 21489.25,
+      "exit_px": 21488.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2024-12-10 11:45:00-05:00",
+      "exit_time": "2024-12-10 12:14:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 21454.0,
+      "exit_px": 21453.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2024-12-12 11:45:00-05:00",
+      "exit_time": "2024-12-12 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 21701.0,
+      "exit_px": 21690.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-12-27 11:45:00-05:00",
+      "exit_time": "2024-12-27 11:50:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 21582.25,
+      "exit_px": 21571.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2024-12-31 11:45:00-05:00",
+      "exit_time": "2024-12-31 11:55:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 21328.75,
+      "exit_px": 21328.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2025-01-07 11:45:00-05:00",
+      "exit_time": "2025-01-07 11:50:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 21504.75,
+      "exit_px": 21494.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-01-10 11:45:00-05:00",
+      "exit_time": "2025-01-10 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 20969.0,
+      "exit_px": 20958.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-01-14 11:45:00-05:00",
+      "exit_time": "2025-01-14 11:54:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 20849.5,
+      "exit_px": 20849.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2025-01-16 11:45:00-05:00",
+      "exit_time": "2025-01-16 13:00:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 21344.75,
+      "exit_px": 21392.25,
+      "reason": "max_hold",
+      "net_pnl": 547.32
+    },
+    {
+      "entry_time": "2025-01-21 11:45:00-05:00",
+      "exit_time": "2025-01-21 12:35:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 21608.75,
+      "exit_px": 21708.25,
+      "reason": "take_profit",
+      "net_pnl": 1171.32
+    },
+    {
+      "entry_time": "2025-01-27 11:45:00-05:00",
+      "exit_time": "2025-01-27 11:53:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 21221.75,
+      "exit_px": 21221.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2025-02-06 11:45:00-05:00",
+      "exit_time": "2025-02-06 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 21771.0,
+      "exit_px": 21770.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2025-02-07 11:45:00-05:00",
+      "exit_time": "2025-02-07 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 21653.0,
+      "exit_px": 21642.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-02-21 11:45:00-05:00",
+      "exit_time": "2025-02-21 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 21987.5,
+      "exit_px": 21977.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-02-25 11:45:00-05:00",
+      "exit_time": "2025-02-25 11:57:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 21063.75,
+      "exit_px": 21163.25,
+      "reason": "take_profit",
+      "net_pnl": 1171.32
+    },
+    {
+      "entry_time": "2025-03-03 11:45:00-05:00",
+      "exit_time": "2025-03-03 11:56:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 20842.0,
+      "exit_px": 20941.5,
+      "reason": "take_profit",
+      "net_pnl": 1171.32
+    },
+    {
+      "entry_time": "2025-03-05 11:45:00-05:00",
+      "exit_time": "2025-03-05 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 20234.0,
+      "exit_px": 20223.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-03-06 11:45:00-05:00",
+      "exit_time": "2025-03-06 11:49:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 20341.5,
+      "exit_px": 20331.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-03-07 11:45:00-05:00",
+      "exit_time": "2025-03-07 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 19830.25,
+      "exit_px": 19819.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-03-10 11:45:00-04:00",
+      "exit_time": "2025-03-10 11:55:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 19605.25,
+      "exit_px": 19604.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2025-03-13 11:45:00-04:00",
+      "exit_time": "2025-03-13 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 19355.75,
+      "exit_px": 19345.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-03-17 11:45:00-04:00",
+      "exit_time": "2025-03-17 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 19653.5,
+      "exit_px": 19684.0,
+      "reason": "max_hold",
+      "net_pnl": 343.32
+    },
+    {
+      "entry_time": "2025-03-18 11:45:00-04:00",
+      "exit_time": "2025-03-18 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 19469.25,
+      "exit_px": 19458.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-03-26 11:45:00-04:00",
+      "exit_time": "2025-03-26 11:49:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 20252.0,
+      "exit_px": 20241.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-03-27 11:45:00-04:00",
+      "exit_time": "2025-03-27 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 20075.25,
+      "exit_px": 20064.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-03-28 11:45:00-04:00",
+      "exit_time": "2025-03-28 11:47:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 19603.0,
+      "exit_px": 19592.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-04-04 11:45:00-04:00",
+      "exit_time": "2025-04-04 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 17924.5,
+      "exit_px": 17914.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-04-10 11:45:00-04:00",
+      "exit_time": "2025-04-10 11:47:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 18402.25,
+      "exit_px": 18391.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-04-14 11:45:00-04:00",
+      "exit_time": "2025-04-14 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 18928.5,
+      "exit_px": 18918.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-04-21 11:45:00-04:00",
+      "exit_time": "2025-04-21 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 17820.75,
+      "exit_px": 17810.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-04-23 11:45:00-04:00",
+      "exit_time": "2025-04-23 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 18889.0,
+      "exit_px": 18878.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-04-28 11:45:00-04:00",
+      "exit_time": "2025-04-28 11:48:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 19352.5,
+      "exit_px": 19342.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-05-09 11:45:00-04:00",
+      "exit_time": "2025-05-09 12:03:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 20133.0,
+      "exit_px": 20132.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2025-05-20 11:45:00-04:00",
+      "exit_time": "2025-05-20 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 21397.0,
+      "exit_px": 21463.25,
+      "reason": "max_hold",
+      "net_pnl": 772.32
+    },
+    {
+      "entry_time": "2025-05-29 11:45:00-04:00",
+      "exit_time": "2025-05-29 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 21443.5,
+      "exit_px": 21433.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-05-30 11:45:00-04:00",
+      "exit_time": "2025-05-30 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 21302.25,
+      "exit_px": 21291.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-06-10 11:45:00-04:00",
+      "exit_time": "2025-06-10 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 21843.25,
+      "exit_px": 21908.25,
+      "reason": "max_hold",
+      "net_pnl": 757.32
+    },
+    {
+      "entry_time": "2025-06-11 11:45:00-04:00",
+      "exit_time": "2025-06-11 11:48:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 21998.75,
+      "exit_px": 21988.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-06-19 11:45:00-04:00",
+      "exit_time": "2025-06-19 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 21497.0,
+      "exit_px": 21496.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2025-06-25 11:45:00-04:00",
+      "exit_time": "2025-06-25 11:58:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 22446.75,
+      "exit_px": 22446.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2025-07-01 11:45:00-04:00",
+      "exit_time": "2025-07-01 12:05:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 22638.5,
+      "exit_px": 22638.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2025-07-04 11:45:00-04:00",
+      "exit_time": "2025-07-04 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 22930.75,
+      "exit_px": 22930.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2025-07-16 11:45:00-04:00",
+      "exit_time": "2025-07-16 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 22935.75,
+      "exit_px": 22925.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-07-29 11:45:00-04:00",
+      "exit_time": "2025-07-29 12:38:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 23459.25,
+      "exit_px": 23458.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2025-08-05 11:45:00-04:00",
+      "exit_time": "2025-08-05 11:50:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 23145.5,
+      "exit_px": 23135.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-08-07 11:45:00-04:00",
+      "exit_time": "2025-08-07 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 23509.5,
+      "exit_px": 23499.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-08-08 11:45:00-04:00",
+      "exit_time": "2025-08-08 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 23621.0,
+      "exit_px": 23672.75,
+      "reason": "max_hold",
+      "net_pnl": 598.32
+    },
+    {
+      "entry_time": "2025-08-11 11:45:00-04:00",
+      "exit_time": "2025-08-11 12:56:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 23730.0,
+      "exit_px": 23729.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2025-08-14 11:45:00-04:00",
+      "exit_time": "2025-08-14 12:11:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 23887.75,
+      "exit_px": 23887.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2025-08-15 11:45:00-04:00",
+      "exit_time": "2025-08-15 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 23742.25,
+      "exit_px": 23812.25,
+      "reason": "max_hold",
+      "net_pnl": 817.32
+    },
+    {
+      "entry_time": "2025-08-18 11:45:00-04:00",
+      "exit_time": "2025-08-18 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 23745.0,
+      "exit_px": 23744.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2025-08-19 11:45:00-04:00",
+      "exit_time": "2025-08-19 11:50:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 23578.5,
+      "exit_px": 23568.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-08-29 11:45:00-04:00",
+      "exit_time": "2025-08-29 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 23457.5,
+      "exit_px": 23447.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-09-02 11:45:00-04:00",
+      "exit_time": "2025-09-02 11:50:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 23056.0,
+      "exit_px": 23045.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-09-09 11:45:00-04:00",
+      "exit_time": "2025-09-09 13:00:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 23761.75,
+      "exit_px": 23827.5,
+      "reason": "max_hold",
+      "net_pnl": 766.32
+    },
+    {
+      "entry_time": "2025-09-16 11:45:00-04:00",
+      "exit_time": "2025-09-16 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 24271.5,
+      "exit_px": 24271.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2025-09-17 11:45:00-04:00",
+      "exit_time": "2025-09-17 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 24178.0,
+      "exit_px": 24177.5,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2025-09-23 11:45:00-04:00",
+      "exit_time": "2025-09-23 11:51:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 24950.25,
+      "exit_px": 24949.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2025-09-24 11:45:00-04:00",
+      "exit_time": "2025-09-24 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 24764.75,
+      "exit_px": 24754.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-09-29 11:45:00-04:00",
+      "exit_time": "2025-09-29 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 24867.25,
+      "exit_px": 24856.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-09-30 11:45:00-04:00",
+      "exit_time": "2025-09-30 12:58:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 24772.5,
+      "exit_px": 24772.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2025-10-02 11:45:00-04:00",
+      "exit_time": "2025-10-02 11:47:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 25026.0,
+      "exit_px": 25015.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-10-07 11:45:00-04:00",
+      "exit_time": "2025-10-07 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 25040.0,
+      "exit_px": 25029.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-10-09 11:45:00-04:00",
+      "exit_time": "2025-10-09 12:42:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 25217.25,
+      "exit_px": 25216.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2025-10-10 11:45:00-04:00",
+      "exit_time": "2025-10-10 11:47:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 24861.0,
+      "exit_px": 24850.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-10-15 11:45:00-04:00",
+      "exit_time": "2025-10-15 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 24960.5,
+      "exit_px": 24950.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-10-16 11:45:00-04:00",
+      "exit_time": "2025-10-16 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 24999.5,
+      "exit_px": 24989.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-10-22 11:45:00-04:00",
+      "exit_time": "2025-10-22 12:03:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 25061.5,
+      "exit_px": 25061.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2025-10-23 11:45:00-04:00",
+      "exit_time": "2025-10-23 12:43:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 25129.0,
+      "exit_px": 25228.5,
+      "reason": "take_profit",
+      "net_pnl": 1171.32
+    },
+    {
+      "entry_time": "2025-10-29 11:45:00-04:00",
+      "exit_time": "2025-10-29 11:48:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 26233.5,
+      "exit_px": 26223.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-10-30 11:45:00-04:00",
+      "exit_time": "2025-10-30 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 25999.0,
+      "exit_px": 25988.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-11-04 11:45:00-05:00",
+      "exit_time": "2025-11-04 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 25773.75,
+      "exit_px": 25763.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-11-06 11:45:00-05:00",
+      "exit_time": "2025-11-06 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 25258.75,
+      "exit_px": 25248.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-11-07 11:45:00-05:00",
+      "exit_time": "2025-11-07 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 24802.25,
+      "exit_px": 24791.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-11-11 11:45:00-05:00",
+      "exit_time": "2025-11-11 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 25517.25,
+      "exit_px": 25516.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2025-11-12 11:45:00-05:00",
+      "exit_time": "2025-11-12 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 25550.0,
+      "exit_px": 25539.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-11-13 11:45:00-05:00",
+      "exit_time": "2025-11-13 11:52:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 25176.5,
+      "exit_px": 25176.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2025-11-19 11:45:00-05:00",
+      "exit_time": "2025-11-19 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 24682.5,
+      "exit_px": 24672.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-11-20 11:45:00-05:00",
+      "exit_time": "2025-11-20 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 24741.75,
+      "exit_px": 24731.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-12-02 11:45:00-05:00",
+      "exit_time": "2025-12-02 11:49:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 25488.75,
+      "exit_px": 25478.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-12-05 11:45:00-05:00",
+      "exit_time": "2025-12-05 11:47:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 25690.25,
+      "exit_px": 25679.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-12-08 11:45:00-05:00",
+      "exit_time": "2025-12-08 11:49:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 25652.5,
+      "exit_px": 25642.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-12-12 11:45:00-05:00",
+      "exit_time": "2025-12-12 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 25187.0,
+      "exit_px": 25176.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-12-17 11:45:00-05:00",
+      "exit_time": "2025-12-17 11:47:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 24812.75,
+      "exit_px": 24802.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2025-12-29 11:45:00-05:00",
+      "exit_time": "2025-12-29 12:06:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 25690.25,
+      "exit_px": 25689.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2025-12-31 11:45:00-05:00",
+      "exit_time": "2025-12-31 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 25579.5,
+      "exit_px": 25579.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2026-01-02 11:45:00-05:00",
+      "exit_time": "2026-01-02 11:48:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 25365.75,
+      "exit_px": 25355.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2026-01-06 11:45:00-05:00",
+      "exit_time": "2026-01-06 12:37:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 25666.25,
+      "exit_px": 25765.75,
+      "reason": "take_profit",
+      "net_pnl": 1171.32
+    },
+    {
+      "entry_time": "2026-01-08 11:45:00-05:00",
+      "exit_time": "2026-01-08 11:52:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 25649.75,
+      "exit_px": 25649.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2026-01-14 11:45:00-05:00",
+      "exit_time": "2026-01-14 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 25514.75,
+      "exit_px": 25504.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2026-01-21 11:45:00-05:00",
+      "exit_time": "2026-01-21 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 25294.75,
+      "exit_px": 25284.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2026-01-28 11:45:00-05:00",
+      "exit_time": "2026-01-28 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 26122.75,
+      "exit_px": 26122.25,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2026-02-03 11:45:00-05:00",
+      "exit_time": "2026-02-03 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 25504.75,
+      "exit_px": 25494.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2026-02-04 11:45:00-05:00",
+      "exit_time": "2026-02-04 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 24979.25,
+      "exit_px": 24968.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2026-02-10 11:45:00-05:00",
+      "exit_time": "2026-02-10 11:51:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 25330.25,
+      "exit_px": 25329.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2026-02-12 11:45:00-05:00",
+      "exit_time": "2026-02-12 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 24876.75,
+      "exit_px": 24866.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2026-02-16 11:45:00-05:00",
+      "exit_time": "2026-02-17 09:30:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 24702.25,
+      "exit_px": 24701.75,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2026-02-19 11:45:00-05:00",
+      "exit_time": "2026-02-19 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 24843.0,
+      "exit_px": 24832.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2026-02-23 11:45:00-05:00",
+      "exit_time": "2026-02-23 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 24765.75,
+      "exit_px": 24755.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2026-02-26 11:45:00-05:00",
+      "exit_time": "2026-02-26 11:46:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 25001.75,
+      "exit_px": 24991.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2026-02-27 11:45:00-05:00",
+      "exit_time": "2026-02-27 12:08:00-05:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 24936.75,
+      "exit_px": 25036.25,
+      "reason": "take_profit",
+      "net_pnl": 1171.32
+    },
+    {
+      "entry_time": "2026-03-11 11:45:00-04:00",
+      "exit_time": "2026-03-11 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 24920.75,
+      "exit_px": 24910.25,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2026-03-13 11:45:00-04:00",
+      "exit_time": "2026-03-13 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 24414.25,
+      "exit_px": 24403.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2026-03-17 11:45:00-04:00",
+      "exit_time": "2026-03-17 11:49:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 24777.5,
+      "exit_px": 24767.0,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2026-03-19 11:45:00-04:00",
+      "exit_time": "2026-03-19 12:03:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 24201.0,
+      "exit_px": 24300.5,
+      "reason": "take_profit",
+      "net_pnl": 1171.32
+    },
+    {
+      "entry_time": "2026-03-23 11:45:00-04:00",
+      "exit_time": "2026-03-23 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 24538.25,
+      "exit_px": 24527.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2026-03-25 11:45:00-04:00",
+      "exit_time": "2026-03-25 11:46:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 24370.25,
+      "exit_px": 24359.75,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    },
+    {
+      "entry_time": "2026-03-26 11:45:00-04:00",
+      "exit_time": "2026-03-26 12:02:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 24081.5,
+      "exit_px": 24081.0,
+      "reason": "break_even",
+      "net_pnl": -28.68
+    },
+    {
+      "entry_time": "2026-04-10 11:45:00-04:00",
+      "exit_time": "2026-04-10 11:48:00-04:00",
+      "direction": 1,
+      "contracts": 6,
+      "entry_px": 25304.0,
+      "exit_px": 25293.5,
+      "reason": "stop_loss",
+      "net_pnl": -148.68
+    }
+  ]
+}

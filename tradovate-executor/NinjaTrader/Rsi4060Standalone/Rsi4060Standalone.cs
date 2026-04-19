@@ -33,6 +33,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Text.RegularExpressions;
 using System.Threading;
 using NinjaTrader.Cbi;
+using NinjaTrader.Data;
 using NinjaTrader.NinjaScript;
 using NinjaTrader.NinjaScript.Indicators;
 #endregion
@@ -589,9 +590,12 @@ namespace NinjaTrader.NinjaScript.Strategies
 
                         using (NetworkStream stream = client.GetStream())
                         using (StreamReader reader = new StreamReader(stream))
+                        using (StreamWriter writer = new StreamWriter(stream) { AutoFlush = true })
                         {
                             while (!bridgeStopRequested)
                             {
+                                writer.WriteLine(BuildBridgeHeartbeatJson());
+
                                 string line = reader.ReadLine();
                                 if (line == null)
                                     break;
@@ -610,6 +614,25 @@ namespace NinjaTrader.NinjaScript.Strategies
                 if (!bridgeStopRequested)
                     Thread.Sleep(1000);
             }
+        }
+
+        private string BuildBridgeHeartbeatJson()
+        {
+            string accountName = Account != null ? Account.Name.Replace("\"", "\\\"") : "unknown";
+            int positionValue = Position.MarketPosition == MarketPosition.Long
+                ? 1
+                : Position.MarketPosition == MarketPosition.Short
+                    ? -1
+                    : 0;
+
+            return string.Format(
+                CultureInfo.InvariantCulture,
+                "{{\"account\":\"{0}\",\"daily_pnl\":{1},\"position\":{2},\"ts\":{3}}}",
+                accountName,
+                sessionPnL,
+                positionValue,
+                DateTimeOffset.UtcNow.ToUnixTimeSeconds()
+            );
         }
 
         private void ApplyBridgeMessage(string json)

@@ -6,6 +6,7 @@ import argparse
 import json
 from dataclasses import asdict
 from dataclasses import dataclass
+from datetime import timedelta
 from pathlib import Path
 
 import numpy as np
@@ -32,6 +33,8 @@ OVERSOLD = 40.0
 OVERBOUGHT = 60.0
 BREAK_EVEN_MINUTES = 5
 KILLSWITCH_DOLLAR = -750.0
+LAST_ENTRY_HHMM = 1630
+FLATTEN_HHMM = 1645
 
 
 @dataclass(frozen=True)
@@ -68,6 +71,22 @@ class PositionState:
     be_applied: bool = False
     pyramid_added: bool = False
     partial_taken: bool = False
+    favorable_max: float = 0.0
+
+
+@dataclass
+class IntradayPositionState:
+    direction: int
+    entry_px: float
+    entry_time: object
+    entry_bar: int
+    entry_minute_idx: int
+    stop_px: float
+    target_px: float
+    contracts: int
+    be_applied: bool = False
+    pending_be: bool = False
+    trail_level: int = 0
     favorable_max: float = 0.0
 
 
@@ -150,7 +169,7 @@ def _build_trade(direction: int, entry_px: float, exit_px: float, contracts: int
     )
 
 
-def run_variant(minute_df: pl.DataFrame, variant: Variant, session_classifications: dict[str, str] | None = None) -> tuple[dict, list[Trade]]:
+def _run_variant_legacy(minute_df: pl.DataFrame, variant: Variant, session_classifications: dict[str, str] | None = None) -> tuple[dict, list[Trade]]:
     df_15m = resample_15m_session(minute_df, end_hhmm=1645)
     opens = df_15m["open"].to_numpy()
     highs = df_15m["high"].to_numpy()
@@ -311,6 +330,207 @@ def run_variant(minute_df: pl.DataFrame, variant: Variant, session_classificatio
     metrics = calc_metrics(trades)
     metrics["killswitch_triggers"] = killswitch_days
     return metrics, trades
+
+
+def _build_intraday_signal_schedule(minute_df: pl.DataFrame, df_15m: pl.DataFrame, signals: np.ndarray, variant: Variant) -> dict[int, dict]:
+    minute_times = minute_df["ts_et"].to_list()
+    time_to_idx = {ts: idx for idx, ts in enumerate(minute_times)}
+    schedule = {}
+    for i, signal in enumerate(signals):
+        if signal == 0:
+            continue
+        entry_time = df_15m["timestamp"][i] + timedelta(minutes=15)
+        entry_idx = time_to_idx.get(entry_time)
+        if entry_idx is None:
+            continue
+        if minute_times[entry_idx].date() != entry_time.date():
+            continue
+        hhmm = int(minute_df["hhmm"][entry_idx])
+        if hhmm >= LAST_ENTRY_HHMM:
+            continue
+        if variant.morning_only and hhmm > 1130:
+            continue
+        schedule[entry_idx] = {
+            "direction": int(signal),
+            "signal_bar": i,
+        }
+    return schedule
+
+
+def _build_bar_minute_map(minute_df: pl.DataFrame, df_15m: pl.DataFrame) -> tuple[dict[int, int], dict[int, int], dict[int, int]]:
+    minute_times = minute_df["ts_et"].to_list()
+    minute_to_bar: dict[int, int] = {}
+    close_idx_to_bar: dict[int, int] = {}
+    next_open_idx_by_bar: dict[int, int] = {}
+    cursor = 0
+    for bar_idx in range(len(df_15m)):
+        start = df_15m["timestamp"][bar_idx]
+        end = start + timedelta(minutes=15)
+        while cursor < len(minute_times) and minute_times[cursor] < start:
+            cursor += 1
+        probe = cursor
+        last_idx = None
+        while probe < len(minute_times) and minute_times[probe] < end:
+            idx = probe
+            minute_to_bar[idx] = bar_idx
+            last_idx = idx
+            probe += 1
+        if last_idx is not None:
+            close_idx_to_bar[last_idx] = bar_idx
+        next_open_time = end
+        if probe < len(minute_times) and minute_times[probe] == next_open_time:
+            next_open_idx_by_bar[bar_idx] = probe
+    return minute_to_bar, close_idx_to_bar, next_open_idx_by_bar
+
+
+def _run_variant_nt_accurate(minute_df: pl.DataFrame, variant: Variant, session_classifications: dict[str, str] | None = None) -> tuple[dict, list[Trade]]:
+    df_15m = resample_15m_session(minute_df, end_hhmm=1645)
+    signals = build_signals(df_15m, enable_atr_filter=variant.atr_filter, atr_threshold_mult=variant.atr_threshold_mult)
+    minute_to_bar, close_idx_to_bar, next_open_idx_by_bar = _build_bar_minute_map(minute_df, df_15m)
+
+    minute_times = minute_df["ts_et"].to_list()
+    minute_opens = minute_df["open"].to_numpy()
+    minute_highs = minute_df["high"].to_numpy()
+    minute_lows = minute_df["low"].to_numpy()
+    minute_closes = minute_df["close"].to_numpy()
+    minute_hhmm = minute_df["hhmm"].to_numpy()
+    minute_dates = minute_df["date_et"].to_list()
+
+    rsi_params = HYBRID_V2["RSI"]
+    stop_points = float(rsi_params["sl_pts"])
+    target_points = float(rsi_params["tp_pts"])
+    max_hold_bars = int(rsi_params["hold"])
+    max_hold_minutes = int(rsi_params["hold"] * 15)
+    contracts = variant.contracts
+
+    trades: list[Trade] = []
+    position: IntradayPositionState | None = None
+    pending_entry: dict | None = None
+    daily_realized = 0.0
+    trading_halted = False
+    killswitch_days = 0
+    current_date = None
+
+    for idx, ts in enumerate(minute_times):
+        if current_date != minute_dates[idx]:
+            current_date = minute_dates[idx]
+            daily_realized = 0.0
+            trading_halted = False
+            pending_entry = None
+            if position is not None and str(position.entry_time)[:10] != str(current_date):
+                position = None
+
+        if pending_entry is not None and position is None and not trading_halted and idx == pending_entry["entry_idx"]:
+            direction = pending_entry["direction"]
+            entry_px = minute_opens[idx] + direction * SLIP_PTS
+            target_px = entry_px + direction * target_points
+            position = IntradayPositionState(
+                direction=direction,
+                entry_px=entry_px,
+                entry_time=ts,
+                entry_bar=pending_entry["signal_bar"],
+                entry_minute_idx=idx,
+                stop_px=entry_px - direction * stop_points,
+                target_px=target_px,
+                contracts=contracts,
+            )
+            pending_entry = None
+
+        if position is None:
+            pass
+        else:
+            current_bar_idx = minute_to_bar.get(idx, position.entry_bar)
+            if idx <= position.entry_minute_idx or current_bar_idx == position.entry_bar:
+                goto_signal_processing = True
+            else:
+                goto_signal_processing = False
+
+            if not goto_signal_processing:
+                if position.pending_be:
+                    position.stop_px = position.entry_px
+                    position.be_applied = True
+                    position.pending_be = False
+
+                exit_px = None
+                reason = ""
+                bars_held = current_bar_idx - position.entry_bar
+
+                if int(minute_hhmm[idx]) >= FLATTEN_HHMM:
+                    exit_px = minute_closes[idx] - position.direction * SLIP_PTS
+                    reason = "time_exit"
+                else:
+                    long_side = position.direction == 1
+                    hit_stop = minute_lows[idx] <= position.stop_px if long_side else minute_highs[idx] >= position.stop_px
+                    hit_target = minute_highs[idx] >= position.target_px if long_side else minute_lows[idx] <= position.target_px
+                    if hit_stop:
+                        exit_px = position.stop_px - position.direction * SLIP_PTS
+                        if position.be_applied and abs(position.stop_px - position.entry_px) < 1e-12:
+                            reason = "break_even"
+                        elif position.trail_level > 0:
+                            reason = "trailing_stop"
+                        else:
+                            reason = "stop_loss"
+                    elif hit_target:
+                        exit_px = position.target_px - position.direction * SLIP_PTS
+                        reason = "take_profit"
+
+                    if exit_px is None and ts >= position.entry_time + timedelta(minutes=max_hold_minutes):
+                        exit_bar_idx = min(position.entry_bar + max_hold_bars, len(df_15m) - 1)
+                        exit_px = df_15m["close"][exit_bar_idx] - position.direction * SLIP_PTS
+                        reason = "max_hold"
+
+                if exit_px is not None:
+                    trade = _build_trade(position.direction, position.entry_px, exit_px, position.contracts, position.entry_time, ts, bars_held, reason)
+                    trades.append(trade)
+                    daily_realized += trade.net_pnl
+                    position = None
+                    if variant.killswitch and not trading_halted and daily_realized <= variant.killswitch_dollar:
+                        trading_halted = True
+                        killswitch_days += 1
+                else:
+                    favorable = minute_highs[idx] - position.entry_px if position.direction == 1 else position.entry_px - minute_lows[idx]
+                    position.favorable_max = max(position.favorable_max, favorable)
+
+                    if variant.break_even and not position.be_applied and ts >= position.entry_time + timedelta(minutes=variant.be_minutes):
+                        position.pending_be = True
+
+                    if variant.trailing_stop and position.be_applied:
+                        if position.favorable_max >= 75.0 and position.trail_level < 3:
+                            new_stop = position.entry_px + 50.0 if position.direction == 1 else position.entry_px - 50.0
+                            position.stop_px = max(position.stop_px, new_stop) if position.direction == 1 else min(position.stop_px, new_stop)
+                            position.trail_level = 3
+                        elif position.favorable_max >= 50.0 and position.trail_level < 2:
+                            new_stop = position.entry_px + 30.0 if position.direction == 1 else position.entry_px - 30.0
+                            position.stop_px = max(position.stop_px, new_stop) if position.direction == 1 else min(position.stop_px, new_stop)
+                            position.trail_level = 2
+                        elif position.favorable_max >= 30.0 and position.trail_level < 1:
+                            new_stop = position.entry_px + 15.0 if position.direction == 1 else position.entry_px - 15.0
+                            position.stop_px = max(position.stop_px, new_stop) if position.direction == 1 else min(position.stop_px, new_stop)
+                            position.trail_level = 1
+
+        if idx in close_idx_to_bar and not trading_halted:
+            bar_idx = close_idx_to_bar[idx]
+            signal = signals[bar_idx]
+            if signal != 0 and position is None:
+                next_idx = next_open_idx_by_bar.get(bar_idx)
+                if next_idx is not None:
+                    next_hhmm = int(minute_hhmm[next_idx])
+                    if next_hhmm < LAST_ENTRY_HHMM and (not variant.morning_only or next_hhmm <= 1130):
+                        pending_entry = {
+                            "entry_idx": next_idx,
+                            "direction": int(signal),
+                            "signal_bar": bar_idx,
+                        }
+
+    metrics = calc_metrics(trades)
+    metrics["killswitch_triggers"] = killswitch_days
+    return metrics, trades
+
+
+def run_variant(minute_df: pl.DataFrame, variant: Variant, session_classifications: dict[str, str] | None = None) -> tuple[dict, list[Trade]]:
+    if variant.trailing_stop:
+        return _run_variant_nt_accurate(minute_df, variant, session_classifications=session_classifications)
+    return _run_variant_legacy(minute_df, variant, session_classifications=session_classifications)
 
 
 def print_params() -> None:
