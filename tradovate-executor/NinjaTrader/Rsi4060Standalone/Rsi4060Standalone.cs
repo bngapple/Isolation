@@ -24,14 +24,9 @@
 
 #region Using declarations
 using System;
-using System.Globalization;
-using System.IO;
 using System.Linq;
-using System.Net.Sockets;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using System.Text.RegularExpressions;
-using System.Threading;
 using NinjaTrader.Cbi;
 using NinjaTrader.Data;
 using NinjaTrader.NinjaScript;
@@ -43,7 +38,6 @@ namespace NinjaTrader.NinjaScript.Strategies
     public class Rsi4060Standalone : Strategy
     {
         private const string EntrySignalName = "RSI40_60";
-        private const double OfflineBridgeSizeMultiplier = 0.34;
 
         private RSI rsi;
         private ATR atr;
@@ -63,15 +57,6 @@ namespace NinjaTrader.NinjaScript.Strategies
         private int atrBufferIndex;
         private int atrBufferCount;
         private double rollingMedianAtr = double.NaN;
-
-        private TcpClient tcpClient;
-        private readonly string bridgeHost = "127.0.0.1";
-        private bool bridgeHalted;
-        private double bridgeSizeMultiplier = 1.0;
-        private string bridgeMode = "NORMAL";
-        private Thread bridgeThread;
-        private volatile bool bridgeStopRequested;
-        private readonly object bridgeLock = new object();
         private Random humanizerRng;
         private bool pendingEntry;
         private int pendingDirection;
@@ -139,45 +124,36 @@ namespace NinjaTrader.NinjaScript.Strategies
         public bool EnableAtrFilter { get; set; }
 
         [NinjaScriptProperty]
-        [Display(Name = "Enable Bridge", GroupName = "Bridge", Order = 14)]
-        public bool EnableBridge { get; set; }
-
-        [NinjaScriptProperty]
-        [Range(1, 65535)]
-        [Display(Name = "Bridge Port", GroupName = "Bridge", Order = 15)]
-        public int BridgePort { get; set; }
-
-        [NinjaScriptProperty]
-        [Display(Name = "Enable Trailing Stop", GroupName = "Risk", Order = 16)]
+        [Display(Name = "Enable Trailing Stop", GroupName = "Risk", Order = 14)]
         public bool EnableTrailingStop { get; set; }
 
         [NinjaScriptProperty]
         [Range(1, 200)]
-        [Display(Name = "Trail Step 1 Points", GroupName = "Risk", Order = 17)]
+        [Display(Name = "Trail Step 1 Points", GroupName = "Risk", Order = 15)]
         public int TrailStep1Points { get; set; }
 
         [NinjaScriptProperty]
         [Range(1, 200)]
-        [Display(Name = "Trail Step 2 Points", GroupName = "Risk", Order = 18)]
+        [Display(Name = "Trail Step 2 Points", GroupName = "Risk", Order = 16)]
         public int TrailStep2Points { get; set; }
 
         [NinjaScriptProperty]
         [Range(1, 200)]
-        [Display(Name = "Trail Step 3 Points", GroupName = "Risk", Order = 19)]
+        [Display(Name = "Trail Step 3 Points", GroupName = "Risk", Order = 17)]
         public int TrailStep3Points { get; set; }
 
         [NinjaScriptProperty]
-        [Display(Name = "Enable Humanizer", GroupName = "Humanizer", Order = 20)]
+        [Display(Name = "Enable Humanizer", GroupName = "Humanizer", Order = 18)]
         public bool EnableHumanizer { get; set; }
 
         [NinjaScriptProperty]
         [Range(1, 30)]
-        [Display(Name = "Humanizer Min Seconds", GroupName = "Humanizer", Order = 21)]
+        [Display(Name = "Humanizer Min Seconds", GroupName = "Humanizer", Order = 19)]
         public int HumanizerMinSeconds { get; set; }
 
         [NinjaScriptProperty]
         [Range(1, 60)]
-        [Display(Name = "Humanizer Max Seconds", GroupName = "Humanizer", Order = 22)]
+        [Display(Name = "Humanizer Max Seconds", GroupName = "Humanizer", Order = 20)]
         public int HumanizerMaxSeconds { get; set; }
 
         protected override void OnStateChange()
@@ -206,8 +182,6 @@ namespace NinjaTrader.NinjaScript.Strategies
                 BreakEvenMinutes  = 5;
                 KillswitchDollar  = 750.0;
                 EnableAtrFilter   = false;
-                EnableBridge      = false;
-                BridgePort        = 5001;
                 EnableTrailingStop = false;
                 TrailStep1Points   = 30;
                 TrailStep2Points   = 50;
@@ -234,15 +208,6 @@ namespace NinjaTrader.NinjaScript.Strategies
             else if (State == State.Realtime)
             {
                 processedClosedTradeCount = SystemPerformance.AllTrades.Count;
-                if (EnableBridge)
-                {
-                    SetBridgeFallback();
-                    StartBridgeThread();
-                }
-            }
-            else if (State == State.Terminated)
-            {
-                StopBridgeThread();
             }
         }
 
@@ -402,14 +367,6 @@ namespace NinjaTrader.NinjaScript.Strategies
                 return;
 
             int activeBreakEvenMinutes = BreakEvenMinutes;
-            if (EnableBridge)
-            {
-                lock (bridgeLock)
-                {
-                    if (string.Equals(bridgeMode, "DEFENSIVE", StringComparison.OrdinalIgnoreCase))
-                        activeBreakEvenMinutes = 2;
-                }
-            }
 
             if (activeBreakEvenMinutes <= 0 || Position.MarketPosition == MarketPosition.Flat || entryPx <= 0.0 || entryTime == Core.Globals.MinDate)
                 return;
@@ -470,17 +427,17 @@ namespace NinjaTrader.NinjaScript.Strategies
         private bool SubmitEntry(int direction)
         {
             int liveContracts = Contracts;
-            if (EnableBridge)
+            if (BridgeState.IsConnected)
             {
-                bool skipForBridge;
-                lock (bridgeLock)
-                {
-                    skipForBridge = bridgeHalted;
-                    liveContracts = Math.Max(1, (int)Math.Floor(Contracts * bridgeSizeMultiplier));
-                }
-
-                if (skipForBridge)
+                if (BridgeState.IsHalted)
                     return false;
+
+                liveContracts = Math.Max(1, (int)Math.Floor(Contracts * BridgeState.SizeMultiplier));
+            }
+            else
+            {
+                // Bridge offline — trade at reduced size
+                liveContracts = Math.Max(1, (int)Math.Floor(Contracts * 0.34));
             }
 
             if (direction > 0)
@@ -540,140 +497,6 @@ namespace NinjaTrader.NinjaScript.Strategies
                 return (values[mid - 1] + values[mid]) / 2.0;
 
             return values[mid];
-        }
-
-        private void StartBridgeThread()
-        {
-            if (bridgeThread != null && bridgeThread.IsAlive)
-                return;
-
-            bridgeStopRequested = false;
-            bridgeThread = new Thread(BridgeLoop)
-            {
-                IsBackground = true,
-                Name = "IsolationBridgeClient"
-            };
-            bridgeThread.Start();
-        }
-
-        private void StopBridgeThread()
-        {
-            bridgeStopRequested = true;
-
-            try
-            {
-                tcpClient?.Close();
-            }
-            catch
-            {
-            }
-
-            if (bridgeThread != null && bridgeThread.IsAlive)
-            {
-                bridgeThread.Join(1000);
-            }
-
-            bridgeThread = null;
-            tcpClient = null;
-        }
-
-        private void BridgeLoop()
-        {
-            while (!bridgeStopRequested)
-            {
-                try
-                {
-                    using (TcpClient client = new TcpClient())
-                    {
-                        tcpClient = client;
-                        client.Connect(bridgeHost, BridgePort);
-
-                        using (NetworkStream stream = client.GetStream())
-                        using (StreamReader reader = new StreamReader(stream))
-                        using (StreamWriter writer = new StreamWriter(stream) { AutoFlush = true })
-                        {
-                            while (!bridgeStopRequested)
-                            {
-                                writer.WriteLine(BuildBridgeHeartbeatJson());
-
-                                string line = reader.ReadLine();
-                                if (line == null)
-                                    break;
-
-                                ApplyBridgeMessage(line);
-                            }
-                        }
-                    }
-                }
-                catch
-                {
-                }
-
-                SetBridgeFallback();
-
-                if (!bridgeStopRequested)
-                    Thread.Sleep(1000);
-            }
-        }
-
-        private string BuildBridgeHeartbeatJson()
-        {
-            string accountName = Account != null ? Account.Name.Replace("\"", "\\\"") : "unknown";
-            int positionValue = Position.MarketPosition == MarketPosition.Long
-                ? 1
-                : Position.MarketPosition == MarketPosition.Short
-                    ? -1
-                    : 0;
-
-            return string.Format(
-                CultureInfo.InvariantCulture,
-                "{{\"account\":\"{0}\",\"daily_pnl\":{1},\"position\":{2},\"ts\":{3}}}",
-                accountName,
-                sessionPnL,
-                positionValue,
-                DateTimeOffset.UtcNow.ToUnixTimeSeconds()
-            );
-        }
-
-        private void ApplyBridgeMessage(string json)
-        {
-            string mode = ExtractJsonString(json, "mode");
-            double sizeMultiplier = ExtractJsonDouble(json, "size_multiplier", OfflineBridgeSizeMultiplier);
-
-            lock (bridgeLock)
-            {
-                bridgeMode = string.IsNullOrEmpty(mode) ? "NORMAL" : mode;
-                bridgeSizeMultiplier = Math.Max(OfflineBridgeSizeMultiplier, sizeMultiplier);
-                bridgeHalted = string.Equals(bridgeMode, "HALTED", StringComparison.OrdinalIgnoreCase);
-            }
-        }
-
-        private void SetBridgeFallback()
-        {
-            lock (bridgeLock)
-            {
-                bridgeMode = "REDUCED";
-                bridgeSizeMultiplier = OfflineBridgeSizeMultiplier;
-                bridgeHalted = false;
-            }
-        }
-
-        private string ExtractJsonString(string json, string key)
-        {
-            Match match = Regex.Match(json, string.Format("\"{0}\"\\s*:\\s*\"(?<value>[^\"]*)\"", Regex.Escape(key)));
-            return match.Success ? match.Groups["value"].Value : string.Empty;
-        }
-
-        private double ExtractJsonDouble(string json, string key, double fallback)
-        {
-            Match match = Regex.Match(json, string.Format("\"{0}\"\\s*:\\s*(?<value>-?\\d+(?:\\.\\d+)?)", Regex.Escape(key)));
-            if (!match.Success)
-                return fallback;
-
-            double parsed;
-            return double.TryParse(match.Groups["value"].Value, NumberStyles.Float, CultureInfo.InvariantCulture, out parsed)
-                ? parsed
-                : fallback;
         }
 
     }
