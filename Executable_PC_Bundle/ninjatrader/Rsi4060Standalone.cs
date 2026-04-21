@@ -427,18 +427,6 @@ namespace NinjaTrader.NinjaScript.Strategies
         private bool SubmitEntry(int direction)
         {
             int liveContracts = Contracts;
-            if (BridgeState.IsConnected)
-            {
-                if (BridgeState.IsHalted)
-                    return false;
-
-                liveContracts = Math.Max(1, (int)Math.Floor(Contracts * BridgeState.SizeMultiplier));
-            }
-            else
-            {
-                // Bridge offline — trade at reduced size
-                liveContracts = Math.Max(1, (int)Math.Floor(Contracts * 0.34));
-            }
 
             if (direction > 0)
                 EnterLong(liveContracts, EntrySignalName);
